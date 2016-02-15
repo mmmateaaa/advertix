@@ -1,4 +1,93 @@
+var AntiSpamResult;
+
+function refreshAntiSpam(){
+	var operation = Math.floor(Math.random() * 3);
+	var a = Math.floor(Math.random() * 10) + 1;
+	var b = Math.floor(Math.random() * 10) + 1;
+
+	switch(operation){
+		case 0:
+			var operationString = ' + ';
+			AntiSpamResult = a+b;
+			break;
+		case 1:
+			var operationString = ' - ';
+			AntiSpamResult = a-b;
+			break;
+		case 2:
+			var operationString = ' * ';
+			AntiSpamResult = a*b;
+			break;
+	}
+
+	$('#spamOperation').html(a + operationString + b);
+
+}
+
+function clearContact(){
+	$('#name').val('');
+	$('#email').val('');
+	$('#phone').val('');
+	$('#message').val('');
+	$('#result').val('');
+
+	$('#contactForm .floating-label-form-group').removeClass("floating-label-form-group-with-value");
+
+	refreshAntiSpam();
+}
+
+function handleContact(response){
+	if(response == 'error') console.error('Error from contact response!');
+
+	clearContact();
+}
+
+function contact(){
+
+	var formData = $('#contactForm').serializeArray();
+
+	var name = formData[0].value;
+	var email = formData[1].value;
+	var phone = formData[2].value;
+	var msg = formData[3].value;
+	var result = formData[4].value;
+
+	var warning = '';
+	var check = name && email && phone && msg;
+
+	if(!check){
+		warning = 'Ispunite sva polja!';
+		$('#FormWarning').html(warning);
+		return;
+	}
+
+	$('#FormWarning').html('');
+
+	check = AntiSpamResult == result;
+
+	if(!check){
+		warning = 'Neispravna anti-spam provjera!';
+		$('#AntiSpamWarning').html(warning);
+		return;
+	}
+
+	$('#AntiSpamWarning').html('');
+
+	$.post('backend/contact.php', $('#contactForm').serialize()).done(function(response){
+			handleContact(response);
+		});
+
+}
+
 jQuery(document).ready(function($){
+
+	refreshAntiSpam();
+
+	$('#contactForm').on('submit', function(e){
+		e.preventDefault();
+		contact();
+	  });
+	
 	//open-close submenu on mobile
 	$('.cd-main-nav').on('click', function(event){
 		if($(event.target).is('.cd-main-nav')) $(this).children('ul').toggleClass('is-visible');

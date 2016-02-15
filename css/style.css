@@ -470,7 +470,7 @@ form .control-group:first-child .floating-label-form-group {
   font-weight: bold;
 }
 
-.anti-spam a{
+.anti-spam .refresh{
   float: right;
   color: #3d3536;
 }

@@ -130,6 +130,9 @@
 				<p>
 					LED Display je digitalni billboard koji nudi mogućnost višestrukog ažuriranja sadržaja te mogućnost emitiranja različitih promotivnih poruka/spotova za cijenu jednoga. Moguć je istodobni prikaz velikog broja multimedijalnih formata, od jednostavnog teksta i slika pa sve do animiranih poruka i video zapisa. Dinamični sadržaj privlači više od 10 puta veću pozornost nego statični plakat.
 				</p>
+
+				<p><a href="download/cjenik-led-display.pdf" target="_blank">Preuzmite cjenik <img src="img/icon-pdf.png" width="32" height="32" alt="PDF"></a></p>
+
 			</div>
 		</div>
 
@@ -226,37 +229,38 @@
                         <div class="control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>Ime</label>
-                                <input type="text" class="form-control" placeholder="Ime" id="name" required data-validation-required-message="Upišite ime.">
+                                <input type="text" class="form-control" placeholder="Ime" id="name" name="name" required data-validation-required-message="Upišite ime.">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
                         <div class="control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>Email</label>
-                                <input type="email" class="form-control" placeholder="Email" id="email" required data-validation-required-message="Upišite email adresu.">
+                                <input type="email" class="form-control" placeholder="Email" id="email" name="email" required data-validation-required-message="Upišite email adresu.">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
                         <div class="control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>Telefon</label>
-                                <input type="tel" class="form-control" placeholder="Telefon" id="phone">
+                                <input type="tel" class="form-control" placeholder="Telefon" id="phone" name="phone">
                             </div>
                         </div>
                         <div class="control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>Poruka</label>
-                                <textarea rows="5" class="form-control" placeholder="Poruka" id="message" required data-validation-required-message="Upišite poruku."></textarea>
-                                <p class="help-block text-danger"></p>
+                                <textarea rows="5" class="form-control" placeholder="Poruka" id="message" name="message" required data-validation-required-message="Upišite poruku."></textarea>
+                                <p id="FormWarning" class="help-block text-danger"></p>
                             </div>
                         </div>        
 						
 						<div class="col-xs-12 anti-spam">
-							<p>Anti spam mehanizam - izračunaj 6 - 6 = ?<a href="" title="Preteško?"><i class="fa fa-refresh"></i></a></p>
+							<p>Anti spam mehanizam - izračunaj <span id="spamOperation"></span> 
+							<span class="refresh">Preteško? <i class="fa fa-refresh" style="cursor:pointer" onClick="refreshAntiSpam()"></i></span></p>
                         	<div class="form-group col-xs-12 floating-label-form-group controls">     	
 	                            <label>Rezultat</label>
-	                            <input type="text" class="form-control" placeholder="Rezultat" id="result" required data-validation-required-message="Upišite rezultat.">
-	                            <p class="help-block text-danger"></p>
+	                            <input type="text" class="form-control" placeholder="Rezultat" id="result" name="result" required data-validation-required-message="Upišite rezultat.">
+	                            <p id="AntiSpamWarning" class="help-block text-danger"></p>
 	                        </div>
                         </div>
                         <div class="form-group col-xs-12">
