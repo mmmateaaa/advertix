@@ -27,7 +27,6 @@ body, html {
 }
 
 a {
-  color: #b4d7a8;
   text-decoration: none;
   cursor: pointer;
 }
@@ -38,6 +37,11 @@ a:hover, a:focus{
 
 button:focus{
   outline: none;
+}
+
+ul{
+  list-style-type: disc;
+  padding-left: 20px;
 }
 
 /* -------------------------------- 
@@ -86,6 +90,13 @@ Modules - reusable parts of our design
 }
 #streetview .cd-container p, #reklamtv .cd-container p{
   padding-top: 30px;
+}
+.clients{
+  list-style-type: none;
+  padding-left: 0;
+}
+.clients a{
+  font-weight: bold;
 }
 
 
@@ -278,6 +289,16 @@ Main components
   background-image: url("../img/background2.jpg");
    min-height: 50%;
 }
+.cd-fixed-bg.cd-bg-6 h1{
+   color: #D9D9D9;
+}
+.cd-fixed-bg.cd-bg-7{
+  background-image: url("../img/background3.jpg");
+   min-height: 50%;
+}
+.cd-fixed-bg.cd-bg-7 h1{
+   color: #D9D9D9;
+}
 @media only screen and (min-width: 768px) {
   .cd-fixed-bg h1, .cd-fixed-bg h2 {
     font-size: 36px;
@@ -326,6 +347,9 @@ Main components
 }
 
 /**********arrow down**********/
+a .arrow{
+  color: #b4d7a8;
+}
 a .arrow:hover{
   color: #b4d7a8;
 }
