@@ -16,7 +16,7 @@ html * {
 
 body {
   font-size: 100%;
-  font-family: "Ubuntu Light", "Lucida Grande", sans-serif;
+  font-family: 'Arimo', sans-serif;
   color: #3d3536;
   background-color: white;
 }
@@ -34,6 +34,10 @@ a {
 
 a:hover, a:focus{
   text-decoration: none;
+}
+
+button:focus{
+  outline: none;
 }
 
 /* -------------------------------- 
@@ -77,8 +81,11 @@ Modules - reusable parts of our design
   color: #E12A1C;
   font-weight: bold;
 }
-#more .cd-container, #streetview .cd-container, #reklamtv .cd-container{
+#more .cd-container{
   padding: 4em 0;
+}
+#streetview .cd-container p, #reklamtv .cd-container p{
+  padding-top: 30px;
 }
 
 
@@ -147,7 +154,10 @@ Main components
   border-top: 1px solid #453c3d;
   color: #8e7d7f;
 }
-@media only screen and (min-width: 950px){
+.cd-fixed-bg {
+    background-attachment: fixed;
+  }
+@media only screen and (min-width: 930px){
   .cd-header #cd-logo {
     margin: 21px 0 0 5%;
   }
@@ -187,7 +197,7 @@ Main components
     height: auto;
     line-height: normal;
     background: transparent;
-    padding: .6em 1em;
+    padding: .6em .9em;
     border-top: none;
     color: #3d3536;
     text-transform: uppercase;
@@ -264,15 +274,16 @@ Main components
   background-color: #0C6594;
   opacity: 0.85;
 }
+.cd-fixed-bg.cd-bg-6{
+  background-image: url("../img/background2.jpg");
+   min-height: 50%;
+}
 @media only screen and (min-width: 768px) {
   .cd-fixed-bg h1, .cd-fixed-bg h2 {
     font-size: 36px;
   }
 }
 @media only screen and (min-width: 1170px) {
-  .cd-fixed-bg {
-    background-attachment: fixed;
-  }
   .cd-fixed-bg h1, .cd-fixed-bg h2 {
     font-size: 48px;
     font-weight: 300;
@@ -287,23 +298,17 @@ Main components
   min-height: 100%;
   padding: 4em 0;
   line-height: 1.6;
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
   z-index: 2;
 }
+.box-shadow{
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+}
 .cd-scrolling-bg.cd-color-1 {
-  background-color: #B4ADA1;
+  background-color: #F2F2F2;
   color: #3d3536;
 }
 .cd-scrolling-bg.cd-color-2 {
-  background-color: #b4d7a8;
-  color: #3d3536;
-}
-.cd-scrolling-bg.cd-color-3 {
-  background-color: #3d3536;
-  color: #a6989a;
-}
-.cd-scrolling-bg.cd-color-4 {
-  background-color: #D05653;
+  background-color: #fff;
   color: #3d3536;
 }
 
@@ -391,3 +396,96 @@ a .arrow:hover{
   }
 }
 
+/**********contact form**********/
+#contactForm{
+  margin-top: 15px;
+}
+
+.floating-label-form-group {
+    position: relative;
+    margin-bottom: 0;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid #D4D4D4;
+}
+
+.floating-label-form-group input,
+.floating-label-form-group textarea {
+    z-index: 1;
+    position: relative;
+    padding-right: 0;
+    padding-left: 0;
+    border: 0;
+    border-radius: 0;
+    font-size: 1em;
+    background: 0 0;
+    box-shadow: none!important;
+    resize: none;
+    color: #333;
+}
+
+.floating-label-form-group input#phone{
+  margin-bottom: 15px;
+}
+
+.floating-label-form-group label {
+    display: block;
+    z-index: 0;
+    position: relative;
+    top: 2em;
+    margin: 0;
+    font-size: .8em;
+    line-height: 1.764705882em;
+    vertical-align: middle;
+    vertical-align: baseline;
+    opacity: 0;
+    -webkit-transition: top .3s ease,opacity .3s ease;
+    -moz-transition: top .3s ease,opacity .3s ease;
+    -ms-transition: top .3s ease,opacity .3s ease;
+    transition: top .3s ease,opacity .3s ease;
+}
+
+.floating-label-form-group::not(:first-child) {
+    padding-left: 14px;
+    border-left: 1px solid #D4D4D4;
+}
+
+.floating-label-form-group-with-value label {
+    top: 0;
+    opacity: 1;
+}
+
+.floating-label-form-group-with-focus label {
+    color: #4FB367;
+}
+
+form .control-group:first-child .floating-label-form-group {
+    border-top: 1px solid #D4D4D4;
+}
+
+.anti-spam{
+  padding: 15px 0;
+}
+
+.anti-spam p{
+  font-weight: bold;
+}
+
+.anti-spam a{
+  float: right;
+  color: #3d3536;
+}
+
+.anti-spam .floating-label-form-group{
+  border-top: 1px solid #D4D4D4;
+  margin-top: 10px;
+}
+
+.btn-success{
+    float: right;
+}
+
+.btn-lg{
+    padding: 10px 30px;
+    font-size: 16px;
+    border-radius: 4px;
+}
