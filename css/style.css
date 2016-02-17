@@ -36,7 +36,7 @@ a:hover, a:focus{
 }
 
 button:focus{
-  outline: none;
+  outline: none !important;
 }
 
 ul{
@@ -74,6 +74,7 @@ Modules - reusable parts of our design
 .title{
   text-align: center;
   font-size: 1.7em;
+  padding-bottom: 5px;
 }
 .logo{
   text-align: right;
@@ -86,10 +87,7 @@ Modules - reusable parts of our design
   font-weight: bold;
 }
 #more .cd-container{
-  padding: 4em 0;
-}
-#streetview .cd-container p, #reklamtv .cd-container p{
-  padding-top: 30px;
+  padding: 2em 0;
 }
 .clients{
   list-style-type: none;
@@ -97,6 +95,40 @@ Modules - reusable parts of our design
 }
 .clients a{
   font-weight: bold;
+}
+.clients span{
+  font-weight: bold;
+}
+.important{
+  font-weight: bold;
+}
+#reklamtv a{
+  float: right;
+}
+.pdf{
+  height: 24px;
+  width: 24px;
+  vertical-align: middle;
+}
+.reklamtv-video video{
+  width: 100%;
+}
+.reklamtv-video .subtitle{
+  color: #3d3536;
+}
+.space{
+  padding-top: 30px;
+}
+.info span{
+  font-weight: bold;
+}
+.info p, .info a{
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+sup{
+  font-size: 14px;
 }
 
 
@@ -148,6 +180,8 @@ Main components
   -ms-transform: translateY(-100%);
   -o-transform: translateY(-100%);
   transform: translateY(-100%);
+  list-style-type: none;
+  padding-left: 0;
 }
 .cd-main-nav ul.is-visible {
   -webkit-transform: translateY(50px);
@@ -218,6 +252,10 @@ Main components
   }
   .no-touch .cd-main-nav a:hover {
     color: #337C17;
+  }
+  .reklamtv-video{
+    margin: auto;
+    width: 60%;
   }
 }
 
@@ -303,6 +341,12 @@ Main components
   .cd-fixed-bg h1, .cd-fixed-bg h2 {
     font-size: 36px;
   }
+  #more .cd-container{
+    padding: 4em 0;
+  }
+  .reklamtv-video video{
+    width: 600px;
+  }
 }
 @media only screen and (min-width: 1170px) {
   .cd-fixed-bg h1, .cd-fixed-bg h2 {
@@ -344,6 +388,13 @@ Main components
     font-size: 1.2rem;
     line-height: 2;
   }
+}
+
+footer{
+  text-align: center;
+  padding: 25px 0 15px;
+  background-color: #F2F2F2;
+  color: #8D8B8B;
 }
 
 /**********arrow down**********/
@@ -420,6 +471,30 @@ a .arrow:hover{
   }
 }
 
+/**********gallery**********/
+.gallery > [class*=col-] {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.gallery-box {
+    display: block;
+    position: relative;
+    margin: 0 3px 3px 0;
+    max-width: 650px;
+}
+
+.gallery-box:hover img{
+  background: rgba(240,95,64,.9);
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+.sl-wrapper button.sl-prev, .sl-wrapper button.sl-next{
+  font-size: 50px;
+}
+
 /**********contact form**********/
 #contactForm{
   margin-top: 15px;
@@ -494,7 +569,7 @@ form .control-group:first-child .floating-label-form-group {
   font-weight: bold;
 }
 
-.anti-spam a{
+.anti-spam .refresh{
   float: right;
   color: #3d3536;
 }
@@ -504,8 +579,16 @@ form .control-group:first-child .floating-label-form-group {
   margin-top: 10px;
 }
 
+.send-btn{
+  padding-right: 0;
+}
+
 .btn-success{
     float: right;
+}
+
+.btn-success:focus{
+    border-color: transparent;
 }
 
 .btn-lg{
