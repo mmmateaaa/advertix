@@ -115,10 +115,6 @@ jQuery(document).ready(function($){
 	// Initialize WOW.js Scrolling Animations
     new WOW().init();
 
-	//gallery lightbox
-	var gallery = $('.bm-gallery').simpleLightbox();
-	var gallery2 = $('.sw-gallery').simpleLightbox();
-
 	// Floating label headings for the contact form
 	$(function() {
 	    $("body").on("input propertychange", ".floating-label-form-group", function(e) {

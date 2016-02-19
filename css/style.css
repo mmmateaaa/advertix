@@ -53,7 +53,6 @@ Modules - reusable parts of our design
   /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
   width: 90%;
   margin: 0 auto;
-  text-align: justify;
 }
 .cd-container::after {
   /* clearfix */
@@ -62,7 +61,8 @@ Modules - reusable parts of our design
   clear: both;
 }
 .cd-container p, .cd-container ul{
-  font-size: 16px;
+  font-size: 14px;
+  text-align: justify;
 }
 .cd-container h4{
   font-weight: bold;
@@ -73,15 +73,18 @@ Modules - reusable parts of our design
 }
 .title{
   text-align: center;
-  font-size: 1.7em;
+  font-size: 25px;
   padding-bottom: 5px;
 }
 .logo{
   text-align: right;
   padding-top: 100px;
 }
+.logo img{
+  width: 250px;
+}
 .subtitle{
-  font-size: 1.2em;
+  font-size: 18px;
   padding: 30px 0 10px;
   color: #E12A1C;
   font-weight: bold;
@@ -104,6 +107,7 @@ Modules - reusable parts of our design
 }
 #reklamtv a{
   float: right;
+  font-size: 14px;
 }
 .pdf{
   height: 24px;
@@ -123,12 +127,12 @@ Modules - reusable parts of our design
   font-weight: bold;
 }
 .info p, .info a{
-  font-size: 16px;
+  font-size: 14px;
   white-space: nowrap;
 }
 
 sup{
-  font-size: 14px;
+  font-size: 12px;
 }
 
 
@@ -191,13 +195,16 @@ Main components
   transform: translateY(50px);
 }
 .cd-main-nav a {
+  padding-left: 0 !important;
   display: block;
   height: 50px;
   line-height: 50px;
   padding-left: 5%;
   background: #2f292a;
   border-top: 1px solid #453c3d;
-  color: #8e7d7f;
+  color: rgba(255,255,255,0.8);
+  text-align: center;
+  text-transform: uppercase;
 }
 .cd-fixed-bg {
     background-attachment: fixed;
@@ -237,7 +244,7 @@ Main components
   .cd-main-nav li {
     display: inline-block;
   }
-  .cd-main-nav a {
+  .cd-main-nav a { 
     display: inline-block;
     height: auto;
     line-height: normal;
@@ -347,6 +354,12 @@ Main components
   .reklamtv-video video{
     width: 600px;
   }
+  .cd-container p, .cd-container ul, .info p, .info a, #reklamtv a{
+    font-size: 16px;
+  }
+  .title{
+    font-size: 30px;
+  }
 }
 @media only screen and (min-width: 1170px) {
   .cd-fixed-bg h1, .cd-fixed-bg h2 {
@@ -388,6 +401,9 @@ Main components
     font-size: 1.2rem;
     line-height: 2;
   }
+  sup{
+    font-size: 14px;
+  }
 }
 
 footer{
@@ -395,6 +411,7 @@ footer{
   padding: 25px 0 15px;
   background-color: #F2F2F2;
   color: #8D8B8B;
+  font-size: 14px;
 }
 
 /**********arrow down**********/
@@ -472,23 +489,16 @@ a .arrow:hover{
 }
 
 /**********gallery**********/
-.gallery > [class*=col-] {
+.gallery > [class*=col-], .link > [class*=col-] {
     padding-right: 0;
     padding-left: 0;
 }
 
-.gallery-box {
+.gallery-box, .link-box {
     display: block;
     position: relative;
     margin: 0 3px 3px 0;
     max-width: 650px;
-}
-
-.gallery-box:hover img{
-  background: rgba(240,95,64,.9);
-    -webkit-transition: all .35s;
-    -moz-transition: all .35s;
-    transition: all .35s;
 }
 
 .sl-wrapper button.sl-prev, .sl-wrapper button.sl-next{
@@ -515,7 +525,7 @@ a .arrow:hover{
     padding-left: 0;
     border: 0;
     border-radius: 0;
-    font-size: 1em;
+    font-size: 16px;
     background: 0 0;
     box-shadow: none!important;
     resize: none;
@@ -563,10 +573,12 @@ form .control-group:first-child .floating-label-form-group {
 
 .anti-spam{
   padding: 15px 0;
+  z-index: 1;
 }
 
 .anti-spam p{
   font-weight: bold;
+  font-size: 14px;
 }
 
 .anti-spam .refresh{
@@ -581,6 +593,7 @@ form .control-group:first-child .floating-label-form-group {
 
 .send-btn{
   padding-right: 0;
+  z-index: 1;
 }
 
 .btn-success{
