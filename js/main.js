@@ -53,10 +53,10 @@ function contact(){
 	var result = formData[4].value;
 
 	var warning = '';
-	var check = name && email && phone && msg;
+	var check = name && email && msg;
 
 	if(!check){
-		warning = 'Ispunite sva polja!';
+		warning = 'Ispunite sva obavezna polja!';
 		$('#FormWarning').html(warning);
 		return;
 	}

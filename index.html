@@ -492,16 +492,14 @@
                     <form name="sentMessage" id="contactForm" novalidate>
                         <div class="control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Ime</label>
-                                <input type="text" class="form-control" placeholder="Ime" id="name" name="name" required data-validation-required-message="Upišite ime.">
-                                <p class="help-block text-danger"></p>
+                                <label>Ime*</label>
+                                <input type="text" class="form-control" placeholder="Ime*" id="name" name="name" required data-validation-required-message="Upišite ime.">
                             </div>
                         </div>
                         <div class="control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>Email*</label>
-                                <input type="email" class="form-control" placeholder="Email" id="email" name="email" required data-validation-required-message="Upišite email adresu.">
-                                <p class="help-block text-danger"></p>
+                                <input type="email" class="form-control" placeholder="Email*" id="email" name="email" required data-validation-required-message="Upišite email adresu.">
                             </div>
                         </div>
                         <div class="control-group">
@@ -513,10 +511,10 @@
                         <div class="control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>Poruka*</label>
-                                <textarea rows="5" class="form-control" placeholder="Poruka" id="message" name="message" required data-validation-required-message="Upišite poruku."></textarea>
-                                <p id="FormWarning" class="help-block text-danger"></p>
+                                <textarea rows="5" class="form-control" placeholder="Poruka*" id="message" name="message" required data-validation-required-message="Upišite poruku."></textarea>
                             </div>
-                        </div>        
+                        </div>  
+                        <p id="FormWarning" class="help-block text-danger"></p>      
 						
 						<div class="col-xs-12 anti-spam">
 							<p>ANTI SPAM MEHANIZAM</p> <p> Izračunaj: <span id="spamOperation"></span> 

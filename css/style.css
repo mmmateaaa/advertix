@@ -571,6 +571,11 @@ form .control-group:first-child .floating-label-form-group {
     border-top: 1px solid #D4D4D4;
 }
 
+.help-block{
+  color: #FA4242;
+  font-weight: bold;
+}
+
 .anti-spam{
   padding: 15px 0;
   z-index: 1;
