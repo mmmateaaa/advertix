@@ -83,10 +83,10 @@ jQuery(document).ready(function($){
 
 	refreshAntiSpam();
 
-	$('#contactForm').on('submit', function(e){
+	/*$('#contactForm').on('submit', function(e){
 		e.preventDefault();
 		contact();
-	  });
+	  });*/
 	
 	//open-close submenu on mobile
 	$('.cd-main-nav').on('click', function(event){
