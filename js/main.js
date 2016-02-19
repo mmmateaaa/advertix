@@ -142,6 +142,9 @@ jQuery(document).ready(function($){
 		revealAnimationDelay = 1500;
 	
 	initHeadline();
+
+	var date = new Date();
+    $('#footer-year').text(date.getFullYear());
 	
 
 	function initHeadline() {
