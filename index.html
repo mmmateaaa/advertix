@@ -1,561 +1,902 @@
-<!doctype html>
-<html lang="en" class="no-js">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advertix</title>
+	<!-- core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl.transitions.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
+    <link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
+    <link rel="stylesheet" type="text/css" href="css/google-map.css">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" type="image/png" href="http://advertix.hr/favicon.png">
 
-	<link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Arimo:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-	
-	<link rel="stylesheet" type="text/css" href="libs/bootstrap-3.3.6-dist/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="libs/font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="css/animated-headline.css">
-	<link rel="stylesheet" type="text/css" href="css/animate.min.css">
-	<link rel="stylesheet" type="text/css" href="libs/lightbox2/dist/css/lightbox.min.css">
-	<link rel="stylesheet" type="text/css" href="css/google-map.css">
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/style.css">
-	<script src="js/modernizr.js"></script>
-  	
-	<title>Advertix</title>
-</head>
-<body>
-	<header class="cd-header">
-		<div id="cd-logo" class="page-scroll"><a href="#home"><img src="img/logo.png" alt="Logo"></a></div>
+    <link href='https://fonts.googleapis.com/css?family=Passion+One|Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+</head><!--/head-->
 
-		<nav class="cd-main-nav">
-			<ul>
-				<li class="page-scroll"><a href="#bikemedia">Bikemedia</a></li>
-				<li class="page-scroll"><a href="#streetview">Streetview</a></li>
-				<li class="page-scroll"><a href="#reklamtv">Reklamtv</a></li>
-				<li class="page-scroll"><a href="#webzasve">Webzasve</a></li>
-				<li class="page-scroll"><a href="#klijenti">Klijenti</a></li>
-				<li class="page-scroll"><a href="#kontakt">Kontakt</a></li>
-			</ul>
-		</nav> 
-	</header>
+<body id="home" class="homepage">
 
-	<main class="cd-main-content">
-		<div class="cd-fixed-bg cd-bg-1" id="home">
-			<section>
-				<h1 class="cd-headline letters rotate-2">
-					<span>Prisutni svugdje uz</span> 
-					<span class="cd-words-wrapper">
-						<b class="is-visible" style="color: #4FB367;">BikeMedia</b>
-						<b style="color: #F27E44">StreetView</b>
-						<b style="color: #D05653">ReklamTV</b>
-						<b style="color: #3079A1">WebZaSve</b>
-					</span>
-				</h1>
-			</section>
+    <header id="header">
+        <nav id="main-menu" class="navbar navbar-default navbar-fixed-top" role="banner">
+            <div class="container cont">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#home"><img src="images/logo.png" alt="logo"></a>
+                </div>
+				
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li class="scroll"><a href="#bikemedia">BikeMedia</a></li>
+                        <li class="scroll"><a href="#promomonster">PromoMonster</a></li>
+                        <li class="scroll"><a href="#cityalarm">CityAlarm</a></li>
+                        <li class="scroll"><a href="#streetview">StreetView</a></li>
+                        <li class="scroll"><a href="#reklamtv">ReklamTV</a></li>
+                        <li class="scroll"><a href="#webzasve">WebZaSve</a></li>
+                        <li class="scroll hidden-sm"><a href="#contact">Kontakt</a></li>                      
+                    </ul>
+                </div>
+            </div><!--/.container-->
+        </nav><!--/nav-->
+    </header><!--/header-->
 
-			<a id="about-us">
-				<div class="arrow bounce"><i class="fa fa-chevron-down"></i></div>
-			</a>
-		</div>
-
-		<div class="cd-scrolling-bg about-us cd-color-1 box-shadow" id="more">
-			<div class="cd-container">
-				<div class="col-xs-12">
-					<h1 class="title">Nekoliko riječi o nama</h1>
-					<p>
-						Advertix team je grupa mladih, kreativnih i znatiželjnih zaljubljenika u marketing kojima je cilj, od samog osnutka našeg studija, pronalaženje novih prilika, rješavanje izazova i savladavanje prepreka. Uobičajeno ne postoji u našem rječniku. Nezaboravne kampanje uspjeha naša su motivacija. Osmijeh na licima naših partnera najveća nagrada. Svakodnevno želimo ponuditi neka bolja, učinkovitija i cijenom dostupna marketinška rješenja. Upravo zbog toga, razvili smo nekoliko inovativnih koncepata kojima je jedini cilj - pomoći vašem poslovanju. Uvjereni smo da su naši koncepti jedinstveni u Hrvatskoj. Kontaktirajte nas još danas u vezi svih detalja koji vas zanimaju. Očekujemo vaš poziv i veselimo se budućoj suradnji.
-					</p>
-					<div class="logo"><img src="img/logo.png"></div>
-
-				</div>
-			</div>
-		</div>
-
-		<div class="cd-scrolling-bg cd-color-2 box-shadow" id="bikemedia">
-			<div class="cd-container">
-				<div class="mini-fixed-bg cd-bg-2 wow pulse"></div>
-				<div class="col-md-6">
-					<h1 class="subtitle">BikeMedia - Promocija u pokretu</h1>
-					<p>
-						Upravo je to ono što mi radimo. BikeMedia koncept, jedinstven u Hrvatskoj, nastao je samo zbog jedne stvari - kako bi vašu tvrtku i vaše usluge/proizvode pretvorio u prepoznatljiv i profitabilan brand. Danas, u svijetu velike konkurencije i svakodnevne tržišne utakmice, imati samo dobar proizvod, nažalost, nije dovoljno. Bitna je prezentacija, način na koji ćete pristupiti tržištu i potaknuti to isto tržište na akciju. Izabrati pravi način oglašavanja, cijenom prihvatljiv, a tržišno učinkovit, izazov je svakog vlasnika tvrtke ili osobe odgovorne za marketing. Odabir pravog medija može vašu uslugu i proizvod uzdignuti u visine, vašu tvrtku pretvoriti u brand, a vaš život u... Samo zamislite. To su samo neki od razloga zašto je stvoren BIKEMedia koncept. Inovativan marketinški alat nastao u mladom, znatiželjnom i kreativnom Inovativo studiju. Osnovni cilj nam je bio ponuditi medij koji nudi unikatan i netradicionalan način oglašavanja sa izuzetnim rezultatima. Mislimo da smo u tome uspjeli. Stvorili smo koncept koji će vašu poruku učiniti privlačnom, vedrom, zaigranom i ono najbitnije - učinkovitom. Naš koncept namijenjen je svim hrvatskim tvrtkama - malim, srednjim i velikim. Svakome možemo ponuditi vrhunsku uslugu i veliku izloženost reklamne poruke. Svakodnevno smo na najfrekventnijim lokacijama u gradu. Smisao koncepta je vrlo jednostavan: izvući maximum uloženog, pobuditi znatiželju i potaknuti na akciju.
-					</p>
-
-					<h1 class="subtitle">BIKEMedia koncept idealan je za:</h1>
-					<ul>
-						<li>promociju novih proizvoda</li>
-						<li>jačanje branda</li>
-						<li>oglašavanje akcija ili popusta</li>
-						<li>izbore</li>
-						<li>najavu događanja</li>
-						<li>sezonska sniženja</li>
-						<li>promociju web stranica</li>
-						<li>gotovo svaku propagandnu aktivnost</li>
-					</ul>
-				</div>
-
-				<div class="col-md-6 p-bottom">
-					<h2 class="subtitle">Zašto je BIKEMedia koncept učinkovit?!</h2>
-
-					<h4>Potrošači jednostavno moraju vidjeti reklamu</h4>
-					<p>Idemo na mjesta gdje su velike koncetracije ljudi odnosno potrošača tako da su reklame u centru pažnje.</p>
-
-					<h4>Gradski ambasadori</h4>
-					<p>Naši promotori su ujedno i naši ljudi od povjerenja. Za svaku pojedinu kampanju educiramo ih o proizvodima i uslugama koje nudite kako bi vaš proizvod maksimalno približili građanima. Oni su vaše oči i uši. Vaša poveznica sa tržištem. Dopustite si užitak poslovanja u prijateljskom ozračju. U svakom trenutku spremni smo prihvatiti sve vaše prijedloge, unaprijediti naše ideje i ostvariti viziju. A ona je samo jedna. Zajednički uspjeh.</p>
-
-					<h4>Niska cijena</h4>
-					<p>Vaša kampanja dolazi do velikog broja ljudi za nisku cijenu.</p>
-
-					<h4>Ekološka prihvatljivost</h4>
-					<p>Naši promotori troše jedino kalorije, a ne fosilna goriva što je dobro za planet.</p>
-
-					<h4>Nezaboravno iskustvo</h4>
-					<p>Kada vaš oglas na ovakav način prođe kroz gomilu ljudi stvara se jedinstveno i nezaboranvno iskustvo.</p>
-
-					<h4>Povezanost umova</h4>
-					<p>Naš koncept ima daleko veći učinak na krajnjeg potrošača nego bilo koji drugi medij. Ne samo zato što je inovativan već i zato jer se bavi psihologijom onih koji kupuju vaše proizvode. A upravo oni su najveća vrijednost. I potencijal vašeg proizvoda.</p>
-
-					<h4>Bonus</h4>
-					<p>Uz svaku reklamnu poruku besplatno nam možete dostaviti do 2000 flajera ili brošura koje će promotori podijeliti građanima.</p>
-				</div>
-				<div class="col-xs-12">
-					<div class="gallery space">
-						<div class="col-xs-6 col-md-3">
-		                    <a href="img/bljv01.jpg" class="gallery-box" data-lightbox="bm-gallery"  data-title="Bizovačke ljetne večeri">
-		                        <img src="img/bljv01.jpg" class="img-responsive" title="Bizovačke ljetne večeri">               
-		                    </a>
-	                	</div>
-	                	<div class="col-xs-6 col-md-3">
-		                    <a href="img/bljv02.jpg" class="gallery-box" data-lightbox="bm-gallery"  data-title="Bizovačke ljetne večeri">
-		                        <img src="img/bljv02.jpg" class="img-responsive" title="Bizovačke ljetne večeri">                  
-		                    </a>
-	                	</div>
-	                	<div class="col-xs-6 col-md-3">
-		                    <a href="img/on02.jpg" class="gallery-box" data-lightbox="bm-gallery"  data-title="OsijekNews">
-		                        <img src="img/on02.jpg" class="img-responsive" title="OsijekNews">                  
-		                    </a>
-	                	</div>
-	                	<div class="col-xs-6 col-md-3">
-		                    <a href="img/on03.jpg" class="gallery-box" data-lightbox="bm-gallery"  data-title="OsijekNews">
-		                        <img src="img/on03.jpg" class="img-responsive" title="OsijekNews">                  
-		                    </a>
-	                	</div>
-	                	<div class="col-xs-6 col-md-3">
-		                    <a href="img/zjs01.jpg" class="gallery-box" data-lightbox="bm-gallery"  data-title="ZdravljeJeSve.com">
-		                        <img src="img/zjs01.jpg" class="img-responsive" title="ZdravljeJeSve.com">                  
-		                    </a>
-	                	</div>
-	                	<div class="col-xs-6 col-md-3">
-		                    <a href="img/zjs03.jpg" class="gallery-box" data-lightbox="bm-gallery"  data-title="ZdravljeJeSve.com">
-		                        <img src="img/zjs03.jpg" class="img-responsive" title="ZdravljeJeSve.com">                  
-		                    </a>
-	                	</div>
-	                	<div class="col-xs-6 col-md-3">
-		                    <a href="img/rc02.jpg" class="gallery-box" data-lightbox="bm-gallery"  data-title="Reklam Centar">
-		                        <img src="img/rc02.jpg" class="img-responsive" title="Reklam Centar">                  
-		                    </a>
-	                	</div>
-	                	<div class="col-xs-6 col-md-3">
-		                    <a href="img/rc03.jpg" class="gallery-box" data-lightbox="bm-gallery"  data-title="Reklam Centar">
-		                        <img src="img/rc03.jpg" class="img-responsive" title="Reklam Centar">                  
-		                    </a>
-	                	</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="cd-scrolling-bg cd-color-1" id="streetview">
-			<div class="cd-container">
-				<div class="mini-fixed-bg cd-bg-3 wow pulse"></div>
-				<div class="col-xs-12">
-					<p class="space">
-						Vanjsko oglašavanje nudi najveću površinu i prenosi Vašu poruku 24 sata na dan. S obzirom na vidljivost, jumbo plakati su odličan izbor. Dizajn plakata je umjetnost za sebe jer poruku treba prenijeti instantno, u sekundi. Ovaj pristup tržištu je među najstarijim načinima oglašavanja i oduvijek se smatrao jednim od najboljih i najefikasnijih sredstava promocije. Jumbo plakati omogućavaju da vaša poruka stigne i do onih koji ne gledaju televiziju, ne slušaju radio i ne čitaju novine.
-					</p>
-				</div>
-
-				<div class="col-xs-12">
-					<h1 class="subtitle">Osijek - Čepinska obilaznica (sjeverna strana)</h1>
-					<div class="gallery">
-						<div class="col-xs-6 col-sm-4 col-md-3">
-		                    <a href="img/j-obil03.jpg" class="gallery-box" data-lightbox="sw-gallery" data-title="Osijek, Čepinska obilaznica (sjever)">
-		                        <img src="img/j-obil03.jpg" class="img-responsive" title="Osijek, Čepinska obilaznica (sjever)">               
-		                    </a>
-	                	</div>
-	                	<div class="col-xs-6 col-sm-4 col-md-3">
-		                    <a href="img/j-obil04.jpg" class="gallery-box" data-lightbox="sw-gallery" data-title="Osijek, Čepinska obilaznica (sjever)">
-		                        <img src="img/j-obil04.jpg" class="img-responsive" title="Osijek, Čepinska obilaznica (sjever)">                  
-		                    </a>
-	                	</div>
-	                	<div class="col-xs-12 col-sm-4 col-md-3">
-		                    <a href="img/j-obil-map.jpg" class="gallery-box" data-lightbox="sw-gallery" data-title="Osijek, Čepinska obilaznica (sjever)">
-		                        <img src="img/j-obil-map.jpg" class="img-responsive" title="Osijek, Čepinska obilaznica (sjever)">                  
-		                    </a>
-	                	</div>
-	                	<div class="col-xs-12 col-sm-12 col-md-3 info">
-		                    <p><span>Tip panoa:</span> Bigboard</p>
-							<p><span>Dimenzije:</span> 10m x 5m - 50 m<sup>2</sup></p>
-							<p><span>Osvjetljenje:</span> da</p>
-							<p><span>Minimalni najam:</span> 3 mjeseca</p>
-							<p><span>Dnevna frekvencija:</span> > 5 000</p>
-							<p><span>Raspoloživo od:</span> 01.04.2016.</p>
-							<a href="download/cjenik-led-display.pdf" target="_blank">Preuzmite cjenik <img src="img/icon-pdf.png" alt="PDF" class="pdf"></a>
-	                	</div>
-	                </div>
-				</div>
-				<div class="col-xs-12">
-					<h1 class="subtitle">Osijek - Čepinska obilaznica (južna strana)</h1>
-	                <div class="gallery">
-						<div class="col-xs-6 col-sm-4 col-md-3 info">
-		                    <a href="img/j-obil01.jpg" class="gallery-box" data-lightbox="sw-gallery" data-title="Osijek, Čepinska obilaznica (jug)">
-		                        <img src="img/j-obil01.jpg" class="img-responsive" title="Osijek, Čepinska obilaznica (jug)">               
-		                    </a>
-	                	</div>
-	                	<div class="col-xs-6 col-sm-4 col-md-3">
-		                    <a href="img/j-obil02.jpg" class="gallery-box" data-lightbox="sw-gallery" data-title="Osijek, Čepinska obilaznica (jug)">
-		                        <img src="img/j-obil02.jpg" class="img-responsive" title="Osijek, Čepinska obilaznica (jug)">                  
-		                    </a>
-	                	</div>
-	                	<div class="col-xs-12 col-sm-4 col-md-3">
-		                    <a href="img/j-obil-map.jpg" class="gallery-box" data-lightbox="sw-gallery" data-title="Osijek, Čepinska obilaznica (jug)">
-		                        <img src="img/j-obil-map.jpg" class="img-responsive" title="Osijek, Čepinska obilaznica (jug)">                  
-		                    </a>
-	                	</div>
-	                	<div class="col-xs-12 col-sm-12 col-md-3 info">
-		                    <p><span>Tip panoa:</span> Bigboard</p>
-							<p><span>Dimenzije:</span> 10m x 5m - 50 m<sup>2</sup></p>
-							<p><span>Osvjetljenje:</span> da</p>
-							<p><span>Minimalni najam:</span> 3 mjeseca</p>
-							<p><span>Dnevna frekvencija:</span> > 5 000</p>
-							<p><span>Raspoloživo od:</span> 01.04.2016.</p>
-							<a href="download/cjenik-led-display.pdf" target="_blank">Preuzmite cjenik <img src="img/icon-pdf.png" alt="PDF" class="pdf"></a>
-	                	</div>
-	                </div>
-				</div>
-				<div class="col-xs-12">
-					<h1 class="subtitle">Bizovac - Nadvožnjak (sjeverna strana)</h1>
-	                <div class="gallery">						
-						<div class="col-xs-6 col-sm-4 col-md-3">
-		                    <a href="img/j-nad01.jpg" class="gallery-box" data-lightbox="sw-gallery" data-title="Bizovac - Nadvožnjak (sjeverna strana)">
-		                        <img src="img/j-nad01.jpg" class="img-responsive" title="Bizovac - Nadvožnjak (sjeverna strana)">               
-		                    </a>
-	                	</div>
-	                	<div class="col-xs-6 col-sm-4 col-md-3">
-		                    <a href="img/j-nad02.jpg" class="gallery-box" data-lightbox="sw-gallery" data-title="Bizovac - Nadvožnjak (sjeverna strana)">
-		                        <img src="img/j-nad02.jpg" class="img-responsive" title="Bizovac - Nadvožnjak (sjeverna strana)">                  
-		                    </a>
-	                	</div>
-	                	<div class="col-xs-12 col-sm-4 col-md-3">
-		                    <a href="img/j-nad-map.jpg" class="gallery-box" data-lightbox="sw-gallery" data-title="Bizovac - Nadvožnjak (sjeverna strana)">
-		                        <img src="img/j-nad-map.jpg" class="img-responsive" title="Bizovac - Nadvožnjak (sjeverna strana)">                  
-		                    </a>
-	                	</div>
-	                	<div class="col-xs-12 col-sm-12 col-md-3 info">
-		                    <p><span>Tip panoa:</span> Bigboard</p>
-							<p><span>Dimenzije:</span> 10m x 5m - 50 m<sup>2</sup></p>
-							<p><span>Osvjetljenje:</span> da</p>
-							<p><span>Minimalni najam:</span> 3 mjeseca</p>
-							<p><span>Dnevna frekvencija:</span> > 5 000</p>
-							<p><span>Raspoloživo od:</span> 01.04.2016.</p>
-							<a href="download/cjenik-led-display.pdf" target="_blank">Preuzmite cjenik <img src="img/icon-pdf.png" alt="PDF" class="pdf"></a>
-	                	</div>
-	                </div>
-	            </div>
-	            <div class="col-xs-12">
-	            	<h1 class="subtitle">Bizovac - Nadvožnjak (južna strana)</h1>
-	                <div class="gallery">						
-						<div class="col-xs-6 col-sm-4 col-md-3 info">
-		                    <a href="img/j-nad03.jpg" class="gallery-box" data-lightbox="sw-gallery" data-title="Bizovac - Nadvožnjak (južna strana)">
-		                        <img src="img/j-nad03.jpg" class="img-responsive" title="Bizovac - Nadvožnjak (južna strana)">               
-		                    </a>
-	                	</div>
-	                	<div class="col-xs-6 col-sm-4 col-md-3">
-		                    <a href="img/j-nad04.jpg" class="gallery-box" data-lightbox="sw-gallery" data-title="Bizovac - Nadvožnjak (južna strana)">
-		                        <img src="img/j-nad04.jpg" class="img-responsive" title="Bizovac - Nadvožnjak (južna strana)">                  
-		                    </a>
-	                	</div>
-	                	<div class="col-xs-12 col-sm-4 col-md-3">
-		                    <a href="img/j-nad-map.jpg" class="gallery-box" data-lightbox="sw-gallery" data-title="Bizovac - Nadvožnjak (južna strana)">
-		                        <img src="img/j-nad-map.jpg" class="img-responsive" title="Bizovac - Nadvožnjak (južna strana)">                  
-		                    </a>
-	                	</div>
-	                	<div class="col-xs-12 col-sm-12 col-md-3 info">
-		                    <p><span>Tip panoa:</span> Bigboard</p>
-							<p><span>Dimenzije:</span> 10,8m x 1,3m - 14,04 m<sup>2</sup></p>
-							<p><span>Osvjetljenje:</span> ne</p>
-							<p><span>Minimalni najam:</span> 1 mjeseca</p>
-							<p><span>Dnevna frekvencija:</span> > 5 000</p>
-							<p><span>Raspoloživo od:</span> 01.01.2016.</p>
-							<a href="download/cjenik-led-display.pdf" target="_blank">Preuzmite cjenik <img src="img/icon-pdf.png" alt="PDF" class="pdf"></a>
-	                	</div>
-	                </div>
-	            </div>
-				<div class="col-xs-12">
-					<h1 class="subtitle">Josipovac - magistralna cesta Virovitica - Osijek (južna strana)</h1>
-	                <div class="gallery">						
-						<div class="col-xs-6 col-sm-4 col-md-3">
-		                    <a href="img/j-jos01.jpg" class="gallery-box" data-lightbox="sw-gallery" data-title="Josipovac - magistralna cesta Virovitica - Osijek (južna strana)">
-		                        <img src="img/j-jos01.jpg" class="img-responsive" title="Josipovac - magistralna cesta Virovitica - Osijek (južna strana)">               
-		                    </a>
-	                	</div>
-	                	<div class="col-xs-6 col-sm-4 col-md-3">
-		                    <a href="img/j-jos02.jpg" class="gallery-box" data-lightbox="sw-gallery" data-title="Josipovac - magistralna cesta Virovitica - Osijek (južna strana)">
-		                        <img src="img/j-jos02.jpg" class="img-responsive" title="Josipovac - magistralna cesta Virovitica - Osijek (južna strana)">                  
-		                    </a>
-	                	</div>
-	                	<div class="col-xs-12 col-sm-4 col-md-3">
-		                    <a href="img/j-jos-map.jpg" class="gallery-box" data-lightbox="sw-gallery" data-title="Josipovac - magistralna cesta Virovitica - Osijek (južna strana)">
-		                        <img src="img/j-jos-map.jpg" class="img-responsive" title="Josipovac - magistralna cesta Virovitica - Osijek (južna strana)">                  
-		                    </a>
-	                	</div>
-	                	<div class="col-xs-12 col-sm-12 col-md-3 info">
-		                    <p><span>Tip panoa:</span> Jumbo pano</p>
-							<p><span>Dimenzije:</span> 4m x 3m - 12 m<sup>2</sup></p>
-							<p><span>Osvjetljenje:</span> ne</p>
-							<p><span>Minimalni najam:</span> 1 mjeseca</p>
-							<p><span>Dnevna frekvencija:</span> > 5 000</p>
-							<p><span>Raspoloživo od:</span> ODMAH!</p>
-							<a href="download/cjenik-led-display.pdf" target="_blank">Preuzmite cjenik <img src="img/icon-pdf.png" alt="PDF" class="pdf"></a>
-	                	</div>
-	                </div>
-				</div>
-				<div class="col-xs-12">
-					<h1 class="subtitle">Osijek - Trg Ante Starčevića</h1>
-	                <div class="gallery">						
-						<div class="col-xs-6 col-sm-4 col-md-3">
-		                    <a href="img/j-trg02.jpg" class="gallery-box" data-lightbox="sw-gallery" data-title="Osijek, Trg Ante Starčevića">
-		                        <img src="img/j-trg02.jpg" class="img-responsive" title="Osijek, Trg Ante Starčevića">               
-		                    </a>
-	                	</div>
-	                	<div class="col-xs-6 col-sm-4 col-md-3">
-		                    <a href="img/j-trg01.jpg" class="gallery-box" data-lightbox="sw-gallery" data-title="Osijek, Trg Ante Starčevića">
-		                        <img src="img/j-trg01.jpg" class="img-responsive" title="Osijek, Trg Ante Starčevića">                  
-		                    </a>
-	                	</div>
-	                	<div class="col-xs-12 col-sm-4 col-md-3">
-		                    <a href="img/j-trg-map.jpg" class="gallery-box" data-lightbox="sw-gallery" data-title="Osijek, Trg Ante Starčevića">
-		                        <img src="img/j-trg-map.jpg" class="img-responsive" title="Osijek, Trg Ante Starčevića">                  
-		                    </a>
-	                	</div>
-	                	<div class="col-xs-12 col-sm-12 col-md-3 info">
-		                    <p><span>Tip panoa:</span> Wallscape</p>
-							<p><span>Dimenzije:</span> 12m x 1,3m - 15,6 m<sup>2</sup></p>
-							<p><span>Osvjetljenje:</span> da</p>
-							<p><span>Minimalni najam:</span> 6 mjeseci</p>
-							<p><span>Dnevna frekvencija:</span> > 10 000</p>
-							<p><span>Raspoloživo od:</span> 01.01.2016.</p>
-							<a href="download/cjenik-led-display.pdf" target="_blank">Preuzmite cjenik <img src="img/icon-pdf.png" alt="PDF" class="pdf"></a>
-	                	</div>
-	                </div>				
-				</div>
-			</div>
-		</div>
-
-		<div class="cd-scrolling-bg cd-color-3" id="reklamtv">
-			<div class="cd-container">
-				<div class="mini-fixed-bg cd-bg-4 wow pulse"></div>
-				<div class="col-md-12">
-					<p class="space">
-						LED Display je digitalni billboard koji nudi mogućnost višestrukog ažuriranja sadržaja te mogućnost emitiranja različitih promotivnih poruka/spotova za cijenu jednoga. Moguć je istodobni prikaz velikog broja multimedijalnih formata, od jednostavnog teksta i slika pa sve do animiranih poruka i video zapisa. Dinamični sadržaj privlači više od 10 puta veću pozornost nego statični plakat.
-					</p>
-
-					<div class="reklamtv-video">
-						<p class="subtitle">Osijek - Strossmayerova</p>
-						<video controls>
-							<source src="video/ReklamTV.mp4" type="video/mp4">
-							Your browser does not support HTML5 video.
-						</video>
-					</div>
-
-					<h1 class="subtitle">Karakteristike:</h1>
-					<ul>
-						<li>Površina Led Display-a je 2.87 m<sup>2</sup>, a dimenzije 2.56 m<sup>2</sup> x 1.12 m<sup>2</sup></li>
-						<li>Dužina reklamne poruke: 10 sec</li>
-						<li>Dnevni automobilski promet na navedenoj lokaciji je 12.000 vozila</li>
-					</ul>
-					<p class="important space">Oglašavanje se provodi svaki dan od 05.00 do 02.00 sati. Pripremu reklamnih poruka obavezni ste nam dostaviti najkasnije 3 radna dana prije početka kampanje. Reklamna poruka treba biti u trajanju od najviše 10 sekundi, dimenzija 256x112 pixela, .avi format, ne veća od 10 MB.</p>
-
-					<a href="download/cjenik-led-display.pdf" target="_blank" class="space">Preuzmite cjenik <img src="img/icon-pdf.png" alt="PDF" class="pdf"></a>
-				</div>
-			</div>
-		</div>
-
-		<div class="cd-scrolling-bg cd-color-1" id="webzasve">
-			<div class="cd-container">
-				<div class="mini-fixed-bg cd-bg-5 wow pulse"></div>
-				<div class="col-md-6">
-					<h1 class="subtitle">Nacionalni projekt - Web Za Sve</h1>
-					<p>
-						Nacionalnim projektom WEB ZA SVE, svim tvrtkama, obrtnicima i poduzetnicima pojedincima, omogućujemo izlaz na tržište beskrajnih mogućnosti. Za Vas smo pripremili dva paketa po akcijskim cijenama i sa mogućnošću plaćanja u 2 rate.
-						Zašto odabrati nas? Zato jer vam, za razliku od ostalih, nudimo unikatan i jedinstven dizajn koji će predstavljati upravo Vašu tvrtku i biti ugodan svakom posjetitelju. Naše stranice imaju responzivan dizajn što znači da su prilagođene pregledima na svim uređajima (mobiteli, tableti, PC, TV...)
-						Detalje poput onih treba li Vam stranica sa 10 ili 20 podstranica, idejno rješenje sa ili bez zaglavlja u flashu, anketa, newsletter ili modul za samostalnu administraciju stranice - prepustite nama.
-					</p>
-				</div>
-				<div class="col-md-6">
-					<h1 class="subtitle">Nudimo slijedeće:</h1>
-					<ul>
-						<li>Registraciju domene po vašem izboru</li>
-						<li>Smještaj web stranica (web hosting)</li>
-						<li>Responzivan i unikatan web dizajn</li>
-						<li>Ugradnju CMS sustava na hrvatskom jeziku, za vaše samostalno ažuriranje svih sadržaja web stranica</li>
-						<li>SEO optimizacija</li>
-						<li>Prijavu web adrese na glavne tražilice</li>
-						<li>Ugradnju Google Analytics statistike posjeta stranicama</li>
-					</ul>
-					<p class="important space">Vi samo zamislite kakvu stranicu želite, a mi ćemo Vaše želje pretvoriti u stvarnost.</p>
-				</div>
-				<div class="col-xs-12">
-					<div class="link space">
-						<div class="col-xs-6 col-sm-3">
-		                    <a href="http://www.zdravljejesve.com/" class="link-box" target="_blank">
-		                        <img src="img/web-zdravljejesve.jpg" class="img-responsive">               
-		                    </a>
-	                	</div>
-	                	<div class="col-xs-6 col-sm-3">
-		                    <a href="http://www.handballreferee.com/" class="link-box" target="_blank">
-		                        <img src="img/web-handballreferee.jpg" class="img-responsive">                  
-		                    </a>
-	                	</div>
-	                	<div class="col-xs-6 col-sm-3">
-		                    <a href="http://www.reklam-centar.com/" class="link-box" target="_blank">
-		                        <img src="img/web-reklamcentar.jpg" class="img-responsive">                  
-		                    </a>
-	                	</div>
-	                	<div class="col-xs-6 col-sm-3">
-		                    <a href="http://www.bikemedia.biz/" class="link-box" target="_blank">
-		                        <img src="img/web-bikemedia.jpg" class="img-responsive">                  
-		                    </a>
-	                	</div>	                
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="cd-fixed-bg cd-bg-6">
-			<h1>Naši klijenti</h1>
-		</div>
-
-		<div class="cd-scrolling-bg cd-color-2 box-shadow" id="klijenti">
-			<div class="cd-container space">
-				<div class="col-sm-6">
-					<ul class="clients">
-						<li><a href="http://www.lidl.hr/hr/index.htm" target="_blank">Lidl Hrvatska</a>, Bani 75, 10010 Zagreb</li>
-						<li><a href="http://www.panturist.hr/" target="_blank">Panturist d.d.</a>, Svetog L.B.Mandića 33, 31000 Osijek <span>(Turizam i putovanja)</span></li>
-						<li><a href="http://www.nexe.hr/" target="_blank">Nexe Grupa</a>, Tajnovac 1, 31500 Našice <span>(Cement, beton, cigla, crijep)</span></li>
-						<li><a href="http://www.tzosijek.hr/" target="_blank">Turistička zajednica Grada Osijeka</a>, Županijska 2, 31000 Osijek <span>(Promocija i turizam)</span></li>
-						<li>Poslovna izvrsnost d.o.o., Kneza Mislava 2/V, 10000 Zagreb <span>(Organizacija business seminara, treninga i radionica)</span></li>
-						<li><a href="http://www.ccusa.com/" target="_blank">Camp Counsellors d.o.o.</a>, Henckeova 1/2, 51000 Rijeka <span>(Studentsko-turistička agencija)</span></li>
-						<li><a href="http://www.hrs.hr/" target="_blank">Hrvatski rukometni savez</a>, Haulikova 6, 10000 Zagreb</li>
-						<li>Eventus, Degenova 2, 10000 Zagreb <span>(Centar brzog učenja, business mind mapping)</span></li>
-						<li><a href="http://www.exoro.hr/" target="_blank">Exoro d.o.o.</a>, Kaptolska 2, 31000 Osijek <span>(Veleprodaja uredskog materijala)</span></li>
-						<li><a href="http://www.snarp.hr/" target="_blank">Snarp d.o.o.</a>, Marjanska 31, 31000 Osijek <span>(Postavljanje aparata za vodu)</span></li>
-						<li><a href="http://www.osijek031.com/" target="_blank">Osijek031.com</a>, osječki news portal</li>
-						<li><a href="http://www.ato.hr/" target="_blank">Ato Inženjering d.o.o.</a>, J.J.Strossmayera 105, 31000 Osijek <span>(Projektiranje, izvođenje i održavanje)</span></li>
-						<li><a href="http://www.idol.hr/" target="_blank">Idol d.o.o.</a>, Svetog L.B.Mandića 111/u, 31000 Osijek <span>(Prodaja i servis vozila)</span></li>
-						<li><a href="http://www.ad-rem.hr/" target="_blank">AD Rem</a>, Trpimirova 3, 31000 Osijek <span>(Informatičke usluge, telekomunikacije, konzalting i promidžba)</span></li>
-						<li><a href="http://www.tera.unios.hr/" target="_blank">Tehnologijsko-razvojni centar u Osijeku d.o.o.</a>, Trg Ljudevita Gaja 6, 31000 Osijek <span>(Nove tehnologije, edukacija)</span></li>
-						<li><a href="http://www.media-box.hr/" target="_blank">Media Box</a>, Nemetin 73, 31000 Osijek <span>(Promocija)</span></li>
-						<li><a href="http://www.xenios.hr/" target="_blank">Xenios d.o.o.</a>, Ilirska 43, 31000 Osijek <span>(Informatičke usluge)</span></li>
-						<li><a href="http://ivora.hr/" target="_blank">Ivora</a>, Trg Kralja Tomislava 4, 42000 Varaždin <span>(Škola managementa i informatike)</span></li>
-					</ul>
-				</div>
-				<div class="col-sm-6">
-					<ul class="clients">
-						<li><a href="http://okobz.hr/kategorija/novosti/" target="_blank">Obrtnička komora Osječko-baranjske županije</a>, Svilajska 35/II, 31000 Osijek</li>
-						<li><a href="http://www.extremesport.hr/" target="_blank"><a href="" target="_blank">Extreme Sport d.o.o.</a>, J.J.Strossmayera 235a, 31000 Osijek <span>(Trgovina na veliko i malo)</span></li>
-						<li><a href="http://www.lingua.hr/" target="_blank">Lingua</a>, Gundulićeva 5, 31000 Osijek <span>(Centar za edukaciju i usluge prevođenja)</span></li>
-						<li><a href="http://www.edunova.hr/" target="_blank"><a href="" target="_blank">Edunova</a>, L.Jagera 5, 31000 Osijek <span>(Škola informatike i managementa)</span></li>
-						<li><a href="http://www.feravino.hr/" target="_blank">Feravino d.o.o.</a>, Feričanci <span>(Proizvodnja vrhunskih hrvatskih vina)</span></li>
-						<li>Građansko streljačko društvo Osijek 1784, S. Petefija b.b., 31106 Osijek <span>(Sport)</span></li>
-						<li><a href="http://www.lanico.hr/" target="_blank">Lanico</a>, Županijska 18/1, 31000 Osijek <span>(Škola stranih jezika)</span></li>
-						<li><a href="http://www.opcina-bizovac.hr/" target="_blank">Općina Bizovac</a>, Kralja Tomislava 89, 31222 Bizovac</li>
-						<li><a href="http://www.petrijevci.hr/index.php" target="_blank">Općina Petrijevci</a>, Republike 114, 31208 Petrijevci</li>
-						<li><a href="http://inkubator.hr/" target="_blank">Poduzetnički inkubator BIOS d.o.o.</a>, J. J. Strossmayera 341, 31000 Osijek</li>
-						<li>Foto Kopi Faks, Stjepana Radića 22, 31000 Osijek <span>(Fotokopiranje, digitalni tisak, ugostiteljstvo, aparati za kavu)</span></li>
-						<li><a href="http://www.pekarstvo-kadulja.hr/" target="_blank">Pekarstvo Kadulja</a>, Sv. I. Krstitelja 83a, 31326 Darda <span>(Ugostiteljstvo)</span></li>
-						<li><a href="http://www.dimnjak.hr/" target="_blank">Dimnjak d.o.o.</a>, Vukovarska 28, 31000 Osijek <span>(Dimnjačarske usluge)</span></li>
-						<li><a href="http://www.zrsosijek.hr/" target="_blank">Zbor rukometnih sudaca Osijek</a>, Kralja Zvonimira 5, 31000 Osijek <span>(Sport)</span></li>
-						<li>Oooze Crossmedia Art Festival, Osijek</li>
-						<li><a href="http://www.josic.hr/" target="_blank">Restoran vinarija Josić</a>, Planina 194, 31307 Zmajevac <span>(Ugostiteljstvo i turizam)</span></li>
-						<li><a href="http://streljastvo.hr/ssobz/" target="_blank">Županijski streljački savez</a>, S. Petefija bb, 31000 Osijek <span>(Sport)</span></li>
-						<li><a href="http://www.fridrich.hr/" target="_blank">Fridrich d.o.o.</a>, Zeleno polje 30, 31000 Osijek <span>(PVC stolarija, ALU bravarija, INOX galanterija, profili i okovi)</span></li>
-						<li><a href="http://www.brlic-keramika.com/" target="_blank">Brlić d.o.o.</a>, Ivana Gundulića 30, 31000 Osijek <span>(Keramičarski radovi i izgradnja bazena)</span></li>
-						<li><a href="http://www.reklam-centar.com/" target="_blank">Reklam centar</a>, Đakovština 2, 31000 Osijek <span>(Marketing i tisak)</span></li>
-						<li>Dekor-gradnja d.o.o., M. Divalta 92/a, 31000 Osijek <span>(Uređenje interijera)</span></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-
-		<div class="cd-fixed-bg cd-bg-7">
-			<h1>Kontaktirajte nas</h1>
-		</div>
-
-		<div class="cd-scrolling-bg cd-color-2" id="kontakt">
-			<div class="cd-container">
-				<div class="col-md-8 col-md-offset-2">
-                    <form name="sentMessage" id="contactForm" novalidate>
-                        <div class="control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Ime*</label>
-                                <input type="text" class="form-control" placeholder="Ime*" id="name" name="name" required data-validation-required-message="Upišite ime.">
+    <section id="main-slider">
+        <div class="owl-carousel">
+            <div class="item item1">
+                <div class="slider-inner">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="carousel-content first-slide">
+                                    <h2>Učinite svoju kampanju<br><span>nezaboravnom!</span></h2>
+                                </div>
                             </div>
                         </div>
-                        <div class="control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Email*</label>
-                                <input type="email" class="form-control" placeholder="Email*" id="email" name="email" required data-validation-required-message="Upišite email adresu.">
+                    </div>
+                </div>
+            </div><!--/.item-->
+            <div class="item item2">
+                <div class="slider-inner">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="carousel-content second-slide">
+                                    <h2>Izgradite svoj <span>brend!</span></h2>
+                                </div>
                             </div>
                         </div>
-                        <div class="control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Telefon</label>
-                                <input type="tel" class="form-control" placeholder="Telefon" id="phone" name="phone">
+                    </div>
+                </div>
+            </div><!--/.item-->
+             <div class="item item3">
+                <div class="slider-inner">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="carousel-content third-slide">
+                                    <h2>Pošaljite svoju poruku<br><span>u stilu!</span></h2>
+                                </div>
                             </div>
                         </div>
-                        <div class="control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Poruka*</label>
-                                <textarea rows="5" class="form-control" placeholder="Poruka*" id="message" name="message" required data-validation-required-message="Upišite poruku."></textarea>
+                    </div>
+                </div>
+            </div><!--/.item-->
+            <div class="item item4">
+                <div class="slider-inner">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="carousel-content last-slide">
+                                    <h2>Pokrenite svoj <span>posao!</span></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--/.item-->
+        </div><!--/.owl-carousel-->
+    </section><!--/#main-slider-->
+
+    <section id="cta" class="wow fadeIn">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-9">
+                    <h2>Ukratko o nama</h2>
+                    <p>Mi smo grupa mladih, kreativnih i znatiželjnih zaljubljenika u marketing kojima je cilj, od samog osnutka našeg studija, pronalaženje novih prilika, rješavanje izazova i savladavanje prepreka. Uobičajeno ne postoji u našem rječniku. Nezaboravne kampanje uspjeha naša su motivacija. Osmijeh na licima naših partnera najveća nagrada. Svakodnevno želimo ponuditi neka bolja, učinkovitija i cijenom dostupna marketinška rješenja. Upravo zbog toga, razvili smo nekoliko inovativnih koncepata kojima je jedini cilj - pomoći vašem poslovanju. Očekujemo vaš poziv i veselimo se budućoj suradnji.
+                    </p>
+                </div>
+                <div class="col-sm-3 text-right">
+                    <a class="btn btn-primary btn-lg" id="contact-us"><i class="fa fa-phone"></i> Kontaktirajte nas</a>
+                </div>
+            </div>
+        </div>
+    </section><!--/#cta-->
+
+    <section id="about-us">
+        <div class="container">
+
+            <div class="section-header">
+                <h2 class="section-title text-center wow fadeInDown">Naši koncepti</h2>
+                <p class="text-center wow fadeInDown">Uvjereni smo da su naši koncepti jedinstveni u Hrvatskoj. <br>  Kontaktirajte nas još danas u vezi svih detalja koji vas zanimaju.</p>
+            </div>
+
+            <div class="row">
+                <div class="features">
+                    <div class="col-sm-6 col-md-4 wow fadeInUp" data-wow-duration="400ms" data-wow-delay="0ms">
+                        <div class="media service-box">
+                            <div class="fa-icon">
+                                <i class="fa fa-bicycle"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">BikeMedia</h4>
+                                <p>Jedinstveni koncept nastao samo zbog jedne stvari - kako bi vašu tvrtku i vaše usluge/proizvode pretvorio u prepoznatljiv i profitabilan brand. Osnovni cilj nam je bio ponuditi medij koji nudi unikatan i netradicionalan način oglašavanja sa izuzetnim rezultatima.</p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+
+                    <div class="col-sm-6 col-md-4 wow fadeInUp" data-wow-duration="400ms" data-wow-delay="100ms">
+                        <div class="media service-box">
+                            <div class="fa-icon">
+                                <i class="fa fa-car"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">PromoMonster</h4>
+                                <p>Ako vam je cilj prezentirati svoju tvrtku u kratkom roku što većem broju ljudi u cijelom gradu, ali i regiji - bolje rješenje niste mogli pronaći. Vrhunski upadljiv koncept privući će mnoštvo pogleda i predstaviti vašu tvrtku na inovativan, kreativan i zanimljiv način.</p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+
+                    <div class="col-sm-6 col-md-4 wow fadeInUp" data-wow-duration="400ms" data-wow-delay="200ms">
+                        <div class="media service-box">
+                            <div class="fa-icon">
+                                <i class="fa fa-bell-o"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">CityAlarm</h4>
+                                <p>Ukoliko želite brzo i ciljano obavijestiti svoje potencijalne kupce o proizvodima i uslugama koje nudite i za to imamo rješenje. Mobilna aplikacija CityAlarm dizajnirana je tako da će informaciju o vašoj djelatnosti dostaviti samo korisnicima koje bi ona zaista mogla i zanimati.</p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+
+                    <div class="col-sm-6 col-md-4 wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
+                        <div class="media service-box">
+                            <div class="fa-icon">
+                                <i class="fa fa-sticky-note-o"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">StreetView</h4>
+                                <p>Street View vanjsko oglašavanje nudi najveću površinu i prenosi Vašu poruku 24 sata na dan. S obzirom na vidljivost, jumbo plakati su odličan izbor. Dizajn plakata je umjetnost za sebe jer poruku treba prenijeti instantno, u sekundi.</p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+
+                    <div class="col-sm-6 col-md-4 wow fadeInUp" data-wow-duration="400ms" data-wow-delay="400ms">
+                        <div class="media service-box">
+                            <div class="fa-icon">
+                                <i class="fa fa-television"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">ReklamTV</h4>
+                                <p>LED Display je digitalni billboard koji nudi mogućnost višestrukog ažuriranja sadržaja te mogućnost emitiranja različitih promotivnih poruka/spotova za cijenu jednoga. Bogatstvo multimedije privući će više pozornosti nego statični plakat.</p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+                
+                    <div class="col-sm-6 col-md-4 wow fadeInUp" data-wow-duration="400ms" data-wow-delay="500ms">
+                        <div class="media service-box">
+                            <div class="fa-icon">
+                                <i class="fa fa-code"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">WebZaSve</h4>
+                                <p>Naše stranice imaju responzivan dizajn, odnosno prilagođene su svim uređajima. Detalje poput onih treba li Vam stranica sa 10 ili 20 podstranica, idejno rješenje sa ili bez zaglavlja u flashu, anketa, newsletter ili modul za samostalnu administraciju stranice prepustite nama.</p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+                </div>
+            </div><!--/.row-->    
+        </div><!--/.container-->
+    </section><!--/#about-us-->
+
+    <section id="bikemedia">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title text-center wow fadeInDown">Bikemedia</h2>
+                <p class="text-justify wow fadeInDown">Izabrati pravi način oglašavanja, cijenom prihvatljiv, a tržišno učinkovit, izazov je svakog vlasnika tvrtke ili osobe odgovorne za marketing. Zato smo stvorili <strong>koncept koji će Vašu poruku učiniti privlačnom, vedrom, zaigranom i ono najbitnije - učinkovitom</strong>. Naš koncept namijenjen je svim hrvatskim tvrtkama - malim, srednjim i velikim. Svakome možemo ponuditi vrhunsku uslugu i veliku izloženost reklamne poruke. <strong>Svakodnevno smo na najfrekventnijim lokacijama u gradu.</strong> Smisao koncepta je vrlo jednostavan: izvući maximum uloženog, pobuditi znatiželju i potaknuti na akciju.</p>
+            </div>
+            <div class="row">
+                <div class="col-sm-8 wow fadeInLeft">
+                    <div id="bm-slider">
+                        <div class="owl-carousel">
+                            <div class="pic" style="background-image: url(images/bm-gallery/bljv01.jpg);">
+                            </div>
+                            <div class="pic" style="background-image: url(images/bm-gallery/bljv02.jpg);">
+                            </div>
+                            <div class="pic" style="background-image: url(images/bm-gallery/on02.jpg);">
+                            </div>
+                            <div class="pic" style="background-image: url(images/bm-gallery/on03.jpg);">
+                            </div>
+                            <div class="pic" style="background-image: url(images/bm-gallery/rc02.jpg);">
+                            </div>
+                            <div class="pic" style="background-image: url(images/bm-gallery/rc03.jpg);">
+                            </div>
+                            <div class="pic" style="background-image: url(images/bm-gallery/zjs01.jpg);">
+                            </div>
+                            <div class="pic" style="background-image: url(images/bm-gallery/zjs03.jpg);">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 wow fadeInRight">
+                    <h3 class="column-title mob-ma-top-30">BikeMedia idealan je za:</h3>
+                    <ul class="nostyle">
+                        <li><i class="fa fa-check"></i> Promociju novih proizvoda</li>
+                        <li><i class="fa fa-check"></i> Jačanje branda</li>
+                        <li><i class="fa fa-check"></i> Oglašavanje akcija ili popusta</li>
+                        <li><i class="fa fa-check"></i> Izbore</li>
+                        <li><i class="fa fa-check"></i> Najave događanja</li>
+                        <li><i class="fa fa-check"></i> Sezonska sniženja</li>
+                        <li><i class="fa fa-check"></i> Promociju web stranica</li>
+                        <li><i class="fa fa-check"></i> Individualan pristup svakom klijentu</li>
+                        <div class="download">
+                            <p>Preuzmite cjenik</p>
+                            <div class="pdf">
+                                <a href="#" target="_blank">
+                                    <img src="images/pdf.png" alt="Preuzmite kao PDF">
+                                </a>
                             </div>
                         </div>  
-                        <p id="FormWarning" class="help-block text-danger"></p>      
-						
-						<div class="col-xs-12 anti-spam">
-							<p>ANTI SPAM MEHANIZAM</p> <p> Izračunaj: <span id="spamOperation"></span> 
-							<span class="refresh">Preteško? <i class="fa fa-refresh" style="cursor:pointer" onClick="refreshAntiSpam()"></i></span></p>
-                        	<div class="form-group col-xs-12 floating-label-form-group controls">     	
-	                            <label>Rezultat</label>
-	                            <input type="text" class="form-control" placeholder="Rezultat" id="result" name="result" required data-validation-required-message="Upišite rezultat.">
-	                            <p id="AntiSpamWarning" class="help-block text-danger"></p>
-	                        </div>
-                        </div>
-                        <div class="form-group col-xs-12 send-btn">
-                            <button type="submit" class="btn btn-success btn-lg">Pošalji</button>
-                        </div>
-                    </form>
+                    </ul>
                 </div>
-                <div class="col-md-8 col-md-offset-2 space">
-					<p><i class="fa fa-home"></i> Vijenac Petrove gore 21, Osijek</p>
-					<p><i class="fa fa-phone"></i> 098 897 858</p>
-					<p><i class="fa fa-envelope"></i> ured@inovativo.hr</p>
-                </div>
-			</div>
-		</div>
+            </div>
+            <div class="row" style="margin-top: 50px;">
+                <div class="col-sm-6">
+                    <h4>Potrošači jednostavno moraju vidjeti reklamu</h4>
+                    <p>Idemo na mjesta gdje su velike koncetracije ljudi odnosno potrošača tako da su reklame u centru pažnje.</p>
 
-		<section id="cd-google-map">
-			<!-- #google-container will contain the map  -->
-			<div id="google-container"></div>
-			<!-- #cd-zoom-in and #zoom-out will be used to create our custom buttons for zooming-in/out -->
-			<div id="cd-zoom-in"></div>
-			<div id="cd-zoom-out"></div>
-			<address>Vijenac Petrove gore 21, 31000, Osijek</address> 
-		</section>
-		<footer>Copyright © Advertix <span id="footer-year"></span> || All right reserved</footer>
-	</main>
-	<script src="libs/jquery/dist/jquery.min.js"></script>
-	<script src="libs/jquery/dist/jquery.easing.min.js"></script>
-	<script src="libs/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
-	<script src="js/wow.min.js"></script>
-	<script src="libs/lightbox2/dist/js/lightbox.min.js"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqehNpBX9N4OwoXWNWGxq9xowQ9JAnoVo"></script>
-	<script src="js/google-map.js"></script>
-	<script src="js/main.js"></script>
+                    <h4>Nezaboravno iskustvo</h4>
+                    <p>Kada vaš oglas na ovakav način prođe kroz gomilu ljudi stvara se jedinstveno i nezaboranvno iskustvo.</p>
+                    
+                </div>
+                <div class="col-sm-6">
+                    <h4>Ekološka prihvatljivost</h4>
+                    <p>Naši promotori troše jedino kalorije, a ne fosilna goriva što je dobro za planet.</p>
+
+                    <h4 class="bonus">Bonus...</h4>
+                    <p class="bonus-text">Uz svaku reklamnu poruku besplatno nam možete dostaviti do 2000 flajera ili brošura koje će promotori podijeliti građanima.</p>
+                </div>
+            </div>
+        </div>
+    </section><!--#bikemedia-->
+
+    <section id="promomonster">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title text-center wow fadeInDown">PromoMonster</h2>
+                <p class="text-justify wow fadeInDown">Ako vam je cilj prezentirati svoju tvrtku u kratkom roku što većem broju ljudi u cijelom gradu, ali i regiji - <strong>bolje rješenje niste mogli pronaći</strong>. Vrhunski upadljiv koncept privući će mnoštvo pogleda i predstaviti vašu tvrtku na inovativan način.</p>
+            </div>
+            <div class="row">
+                <div class="col-sm-8 wow fadeInLeft">
+                    <div id="pm-slider">
+                        <div class="owl-carousel">
+                            <div class="pic" style="background-image: url(images/pm-gallery/pm-1.jpg);">
+                            </div>
+                            <div class="pic" style="background-image: url(images/pm-gallery/pm-2.jpg);">
+                            </div>
+                            <div class="pic" style="background-image: url(images/pm-gallery/pm-3.jpg);">
+                            </div>
+                            <div class="pic" style="background-image: url(images/pm-gallery/pm-4.jpg);">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 wow fadeInRight">
+                    <h3 class="column-title mob-ma-top-30">Zašto koristiti PromoMonster?</h3>
+                    <ul class="nostyle">
+                        <li><i class="fa fa-check"></i> Pošaljite kreativnu i zanimljivu poruku</li>
+                        <li><i class="fa fa-check"></i> Širok doseg i fleksibilnost</li>
+                        <li><i class="fa fa-check"></i> Brzi i mjerljivi rezultati</li>
+                        <li><i class="fa fa-check"></i> Kratko vrijeme organizacije kampanje</li>
+                        <li><i class="fa fa-check"></i> Djelotvorno i vizualno atraktivno</li>
+                        <li><i class="fa fa-check"></i> Medij koji podržava kampanje različitog trajanja</li>
+                        <li><i class="fa fa-check"></i> Mogućnost oglašavanja u samo jednom gradu</li>
+                        <li><i class="fa fa-check"></i> Medij koji pruža kvalitetu po atraktivnoj cijeni</li></ul>
+                        <div class="download">
+                        <p>Preuzmite cjenik</p>
+                        <div class="pdf">
+                            <a href="#" target="_blank">
+                                <img src="images/pdf.png" alt="Preuzmite kao PDF">
+                            </a>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 50px;">
+                <div class="col-sm-6">
+
+                    <h4>Gradski ambasadori</h4>
+                    <p>Naši promotori su ujedno i naši ljudi od povjerenja. Za svaku pojedinu kampanju educiramo ih o proizvodima i uslugama koje nudite kako bi vaš proizvod maksimalno približili građanima. Oni su vaše oči i uši. Vaša poveznica sa tržištem. Dopustite si užitak poslovanja u prijateljskom ozračju. U svakom trenutku spremni smo prihvatiti sve vaše prijedloge, unaprijediti naše ideje i ostvariti viziju. A ona je samo jedna. Zajednički uspjeh.</p>
+                    
+                </div>
+                <div class="col-sm-6">
+                    <h4>Niska cijena</h4>
+                    <p>Vaša kampanja dolazi do velikog broja ljudi za nisku cijenu.</p>
+                    
+                    <h4>Povezanost umova</h4>
+                    <p>Naš koncept ima daleko veći učinak na krajnjeg potrošača nego bilo koji drugi medij. Ne samo zato što je inovativan već i zato jer se bavi psihologijom onih koji kupuju vaše proizvode. A upravo oni su najveća vrijednost. I potencijal vašeg proizvoda.</p>
+                </div>
+            </div>  
+        </div>
+    </section><!--/#promomonster-->
+
+    <section id="cityalarm">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title text-center wow fadeInDown">CityAlarm</h2>
+                <p class="text-justify wow fadeInDown">Ukoliko želite <strong>brzo i ciljano obavijestiti</strong> svoje potencijalne kupce o proizvodima i uslugama koje nudite i za to imamo rješenje. <strong>Mobilna aplikacija CityAlarm</strong> dizajnirana je tako da će informaciju o vašoj djelatnosti dostaviti samo korisnicima koje bi ona zaista mogla i zanimati. Na ovaj način komunikacija sa potencijalnim klijentima je <strong>brza, direktna, jeftina i osobna</strong>.</p>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-md-offset-1 col-md-6 wow fadeInLeft">
+                    <img class="img-responsive" src="images/city-alarm/city-alarm.png" alt="">
+                </div>
+                <div class="col-sm-6 col-md-5">
+                    <div class="media cityalarm-box wow fadeInRight">
+                        <div class="pull-left">
+                            <i class="fa fa-ticket"></i>
+                        </div>
+                        <div class="cityalarm-body">
+                            <h4 class="media-heading">Bez kupona</h4>
+                            <p>Nema kupona, kodova ni plaćanja unaprijed.</p>
+                        </div>
+                    </div>
+
+                    <div class="media cityalarm-box wow fadeInRight">
+                        <div class="pull-left">
+                            <i class="fa fa-bell-o"></i>
+                        </div>
+                        <div class="cityalarm-body">
+                            <h4 class="media-heading">Notifikacije</h4>
+                            <p>Znat ćeš za sve akcije od ponuđača koje ti odabereš.</p>
+                        </div>
+                    </div>
+
+                    <div class="media cityalarm-box wow fadeInRight">
+                        <div class="pull-left">
+                            <i class="fa fa-certificate"></i>
+                        </div>
+                        <div class="cityalarm-body">
+                            <h4 class="media-heading">Ušteda</h4>
+                            <p>Besplatno prati i iskoristi akcije iz kategorija koje te zanimaju.</p>
+                        </div>
+                    </div>
+
+                    <div class="media cityalarm-box wow fadeInRight">
+                        <div class="pull-left">
+                            <i class="fa fa-map-marker"></i>
+                        </div>
+                        <div class="cityalarm-body">
+                            <h4 class="media-heading">Lokacija</h4>
+                            <p>Potraži akcije koje su u tvojoj blizini.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="download download-app">
+                <p>Aplikaciju možete preuzeti sa - USKORO!</p>
+                <div class="stores">
+                    <a href="#" class="app-store">
+                        <img src="images/city-alarm/app-store.png" alt="app-store">
+                    </a>
+                    <a href="#" class="google-play">
+                        <img src="images/city-alarm/google-play.png" alt="google-play">
+                    </a>
+                </div>
+            </div>             
+        </div>
+    </section><!--#cityalarm-->
+
+    <section id="streetview">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title text-center wow fadeInDown">StreetView</h2>
+                <p class="text-justify wow fadeInDown">Ovaj pristup tržištu je među najstarijim načinima oglašavanja i oduvijek se smatrao jednim od <strong>najboljih i najefikasnijih sredstava promocije.</strong> Jumbo plakati omogućavaju da vaša poruka stigne i do onih koji ne gledaju televiziju, ne slušaju radio i ne čitaju novine. A uloga našeg koncepta je da <strong>Vašoj reklami rezervira mjesto na nekim od raznih visoko frekventnih lokacija.</strong></p>
+            </div>
+
+            <div class="portfolio-items">
+                <div class="col-sm-4">
+                    <div class="portfolio-item creative wow well" data-wow-duration="400ms" data-wow-delay="100ms">   
+                        <div class="portfolio-item-inner">
+                            <img class="img-responsive" src="images/sw-gallery/j-obil04.jpg" alt="">
+                            <div class="portfolio-info">
+                                <h3>Osijek</h3>
+                                Čepinska obilaznica (sjeverna strana)
+                                <a class="preview mgp-preview" href="images/sw-gallery/j-obil04.jpg" title="BIGBOARD, 10m x 5m - 50 m<sup>2</sup> <br> Osijek - Čepinska obilaznica (sjeverna strana)"><i class="fa fa-eye"></i></a>
+                                <a class="preview" href="http://maps.google.com/maps?z=14&q=loc:45.5124523+18.5383045&output=embed?iframe=true&width=640&height=480" rel="prettyPhoto"><i class="fa fa-map-marker"></i></a>
+                            </div>
+                        </div>
+                    
+                        <p><b>BIGBOARD</b>, 10m x 5m - 50 m<sup>2</sup></p> 
+                        <p>Lokacija: Osijek - Čepinska obilaznica</p> 
+                        <p>Osvjetljenje: NE</p>
+                        <p>Minimalni najam: 3 mjeseca</p>
+                        <p>Dnevna frekvencija: > 5 000</p>
+                        <p>Raspoloživo od: <b>ODMAH</b></p> 
+                        <div class="download">
+                            <p>Preuzmite cjenik</p>
+                            <div class="pdf">
+                                <a href="#" target="_blank">
+                                    <img src="images/pdf.png" alt="Preuzmite kao PDF">
+                                </a>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="portfolio-item corporate portfolio wow fadeInUp well" data-wow-duration="400ms" data-wow-delay="200ms">
+                        <div class="portfolio-item-inner">
+                            <img class="img-responsive" src="images/sw-gallery/j-obil02.jpg" alt="">
+                            <div class="portfolio-info">
+                                <h3>Osijek</h3>
+                                Čepinska obilaznica (južna strana)
+                                <a class="preview mgp-preview" href="images/sw-gallery/j-obil02.jpg" title="BIGBOARD, 10m x 5m - 50 m<sup>2</sup> <br> Osijek - Čepinska obilaznica (južna strana)"><i class="fa fa-eye"></i></a>
+                                <a class="preview" href="http://maps.google.com/maps?z=14&q=loc:45.5124523+18.5383045&output=embed?iframe=true&width=640&height=480" rel="prettyPhoto"><i class="fa fa-map-marker"></i></a>
+                            </div>
+                        </div>
+                        <p><b>BIGBOARD</b>, 10m x 5m - 50 m<sup>2</sup></p>
+                        <p>Lokacija: Osijek - Čepinska obilaznica</p> 
+                        <p>Osvjetljenje: NE</p>
+                        <p>Minimalni najam: 3 mjeseca</p>
+                        <p>Dnevna frekvencija: > 5 000</p>
+                        <p>Raspoloživo od: <b>ODMAH</b></p>
+                        <div class="download">
+                            <p>Preuzmite cjenik</p>
+                            <div class="pdf">
+                                <a href="#" target="_blank">
+                                    <img src="images/pdf.png" alt="Preuzmite kao PDF">
+                                </a>
+                            </div>
+                        </div>  
+                    </div>
+                </div>  
+                <div class="col-sm-4">
+                    <div class="portfolio-item creative wow fadeInUp well" data-wow-duration="400ms" data-wow-delay="300ms">
+                        <div class="portfolio-item-inner">
+                            <img class="img-responsive" src="images/sw-gallery/j-nad02.jpg" alt="">
+                            <div class="portfolio-info">
+                                <h3>Bizovac</h3>
+                                Nadvožnjak (južna strana)
+                                <a class="preview mgp-preview" href="images/sw-gallery/j-nad02.jpg" title="BIGBOARD, 10m x 5m - 50 m<sup>2</sup> <br> Bizovac - Nadvožnjak (južna strana)"><i class="fa fa-eye"></i></a>
+                                <a class="preview" href="http://maps.google.com/maps?z=14&q=loc:45.5944267+18.4699635&output=embed?iframe=true&width=640&height=480" rel="prettyPhoto"><i class="fa fa-map-marker"></i></a>
+                            </div>
+                        </div>
+                        <p><b>NADVOŽNJAK</b>, 10,8m x 1,3m - 14,04 m<sup>2</sup></p>
+                        <p>Lokacija: Bizovac</p> 
+                        <p>Osvjetljenje: NE</p>
+                        <p>Minimalni najam: 1 mjesec</p>
+                        <p>Dnevna frekvencija: > 5 000</p>
+                        <p>Raspoloživo od: <b>01.03.2017.</b></p>
+                        <div class="download">
+                            <p>Preuzmite cjenik</p>
+                            <div class="pdf">
+                                <a href="#" target="_blank">
+                                    <img src="images/pdf.png" alt="Preuzmite kao PDF">
+                                </a>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+                    
+                <div class="col-sm-4">
+                    <div class="portfolio-item corporate wow fadeInUp well" data-wow-duration="400ms" data-wow-delay="100ms">
+                        <div class="portfolio-item-inner">
+                            <img class="img-responsive" src="images/sw-gallery/j-nad03.jpg" alt="">
+                            <div class="portfolio-info">
+                                <h3>Bizovac</h3>
+                                Nadvožnjak (sjeverna strana)
+                                <a class="preview mgp-preview" href="images/sw-gallery/j-nad03.jpg" title="BIGBOARD, 10,8m x 1,3m - 14,04 m<sup>2</sup> <br> Bizovac - Nadvožnjak (sjeverna strana)"><i class="fa fa-eye"></i></a>
+                                <a class="preview" href="http://maps.google.com/maps?z=14&q=loc:45.5944267+18.4699635&output=embed?iframe=true&width=640&height=480" rel="prettyPhoto"><i class="fa fa-map-marker"></i></a>
+                            </div>
+                        </div>
+                        <p><b>NADVOŽNJAK</b>, 10,8m x 1,3m - 14,04 m<sup>2</sup></p>
+                        <p>Lokacija: Bizovac</p> 
+                        <p>Osvjetljenje: NE</p>
+                        <p>Minimalni najam: 1 mjesec</p>
+                        <p>Dnevna frekvencija: > 5 000</p>
+                        <p>Raspoloživo od: <b>01.08.2016.</b></p>
+                        <div class="download">
+                            <p>Preuzmite cjenik</p>
+                            <div class="pdf">
+                                <a href="#" target="_blank">
+                                    <img src="images/pdf.png" alt="Preuzmite kao PDF">
+                                </a>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+                
+                <div class="col-sm-4">
+                    <div class="portfolio-item creative portfolio wow fadeInUp well" data-wow-duration="400ms" data-wow-delay="200ms">
+                        <div class="portfolio-item-inner">
+                            <img class="img-responsive" src="images/sw-gallery/j-jos01.jpg" alt="">
+                            <div class="portfolio-info">
+                                <h3>Josipovac</h3>
+                                Jumbo pano (južna strana)
+                                <a class="preview mgp-preview" href="images/sw-gallery/j-jos01.jpg" title="JUMBO PANO, 4m x 3m - 12 m<sup>2</sup> <br> Josipovac - magistralna cesta Virovitica - Osijek (južna strana)"><i class="fa fa-eye"></i></a>
+                                <a class="preview" href="http://maps.google.com/maps?z=14&q=loc:45.5908335+18.5654907&output=embed?iframe=true&width=640&height=480" rel="prettyPhoto"><i class="fa fa-map-marker"></i></a>
+                            </div>
+                        </div>
+                        <p><b>JUMBO PANO</b>, 4m x 3m - 12 m<sup>2</sup></p>
+                        <p>Lokacija: Josipovac</p> 
+                        <p>Osvjetljenje: NE</p>
+                        <p>Minimalni najam: 1 mjesec</p>
+                        <p>Dnevna frekvencija: > 5 000</p>
+                        <p>Raspoloživo od: <b>ODMAH</b></p>
+                        <div class="download">
+                            <p>Preuzmite cjenik</p>
+                            <div class="pdf">
+                                <a href="#" target="_blank">
+                                    <img src="images/pdf.png" alt="Preuzmite kao PDF">
+                                </a>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="portfolio-item corporate wow fadeInUp well" data-wow-duration="400ms" data-wow-delay="300ms">
+                        <div class="portfolio-item-inner">
+                            <img class="img-responsive" src="images/sw-gallery/j-jos02.jpg" alt="">
+                            <div class="portfolio-info">
+                                <h3>Josipovac</h3>
+                                Jumbo pano (sjeverna strana)
+                                <a class="preview mgp-preview" href="images/sw-gallery/j-jos02.jpg" title="JUMBO PANO, 4m x 3m - 12 m<sup>2</sup> <br> Josipovac - magistralna cesta Virovitica - Osijek (sjeverna strana)"><i class="fa fa-eye"></i></a>
+                                <a class="preview" href="http://maps.google.com/maps?z=14&q=loc:45.5908335+18.5654907&output=embed?iframe=true&width=640&height=480" rel="prettyPhoto"><i class="fa fa-map-marker"></i></a>
+                            </div>
+                        </div>
+                        <p><b>JUMBO PANO</b>, 4m x 3m - 12 m<sup>2</sup></p>
+                        <p>Lokacija: Josipovac</p> 
+                        <p>Osvjetljenje: NE</p>
+                        <p>Minimalni najam: 1 mjesec</p>
+                        <p>Dnevna frekvencija: > 5 000</p>
+                        <p>Raspoloživo od: <b>ODMAH</b></p>
+                        <div class="download">
+                            <p>Preuzmite cjenik</p>
+                            <div class="pdf">
+                                <a href="#" target="_blank">
+                                    <img src="images/pdf.png" alt="Preuzmite kao PDF">
+                                </a>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div><!--/.container-->
+    </section><!--/#streetview-->
+
+    <section id="reklamtv">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title text-center wow fadeInDown">ReklamTV</h2>
+                <p class="text-justify wow fadeInDown">LED Display je digitalni billboard koji nudi mogućnost višestrukog ažuriranja sadržaja te mogućnost emitiranja <strong>različitih promotivnih poruka/spotova za cijenu jednoga</strong>. Moguć je istodobni prikaz velikog broja multimedijalnih formata, od jednostavnog teksta i slika pa sve do animiranih poruka i video zapisa. <strong>Dinamični sadržaj privlači više od 10 puta veću pozornost nego statični plakat.</strong> </p>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-6 wow fadeInLeft">
+                    <h3 class="column-title">Osijek - Strossmayerova</h3>
+                    <!-- 16:9 aspect ratio -->
+                    <div class="rtv-video">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe src="https://player.vimeo.com/video/158203065?title=0&amp;byline=0&amp;portrait=0&amp;color=e94b35" frameborder="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 wow fadeInRight">
+                    <h3 class="column-title mob-ma-top-30">Karakteristike</h3>
+                    <ul class="nostyle">
+                        <li><i class="fa fa-check"></i> Površina Led Display-a je 2.87 m<sup>2</sup>, a dimenzije 2.56 m<sup>2</sup> x 1.12 m<sup>2</sup></li>
+                        <li><i class="fa fa-check"></i> Dužina reklamne poruke: 10 sec</li>
+                        <li><i class="fa fa-check"></i> Dnevni automobilski promet na navedenoj lokaciji je 12.000 vozila</li>
+                    </ul>
+                    <p>Oglašavanje se provodi svaki dan od 00.00 do 24.00 sata. Pripremu reklamnih poruka obavezni ste nam dostaviti najkasnije 3 radna dana prije početka kampanje. Reklamna poruka treba biti u trajanju od najviše 10 sekundi, dimenzija 256x112 pixela, .avi format, ne veća od 10 MB.</p>   
+                    <div class="download">
+                    <p>Preuzmite cjenik</p>
+                    <div class="pdf">
+                        <a href="download/cjenik-led-display.pdf" target="_blank">
+                            <img src="images/pdf.png" alt="Preuzmite kao PDF">
+                        </a>
+                    </div>
+                </div>  
+                </div>  
+             </div>
+            </div>
+        </div>
+    </section><!--/#reklamtv-->
+
+    <section id="webzasve">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title text-center wow fadeInDown">WebZaSve</h2>
+                <p class="text-justify wow fadeInDown">Nacionalnim projektom Web Za Sve, svim tvrtkama, obrtnicima i poduzetnicima pojedincima, omogućujemo izlaz na tržište beskrajnih mogućnosti. Za Vas smo pripremili dva paketa po akcijskim cijenama i sa mogućnošću plaćanja u 2 rate. Zašto odabrati nas? Zato jer vam, za razliku od ostalih, <strong>nudimo unikatan i jedinstven dizajn koji će predstavljati upravo Vašu tvrtku i biti ugodan svakom posjetitelju.</strong></p>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-8 wow fadeInLeft">
+                    <div class="wzs-img">
+                        <img src="images/wzs.png">
+                    </div>
+                </div>
+
+                <div class="col-sm-4 mob-ma-top-30 wow fadeInRight">
+                    <h3 class="column-title">Nudimo slijedeće:</h3>
+                    <ul class="nostyle">
+                        <li><i class="fa fa-check"></i> Registraciju domene po vašem izboru</li>
+                        <li><i class="fa fa-check"></i> Smještaj web stranica (web hosting)</li>
+                        <li><i class="fa fa-check"></i> Responzivan i unikatan web dizajn</li>
+                        <li><i class="fa fa-check"></i> Ugradnju CMS sustava na hrvatskom jeziku</li>
+                        <li><i class="fa fa-check"></i> SEO optimizacija</li>
+                        <li><i class="fa fa-check"></i> Prijavu web adrese na glavne tražilice</li>
+                         <b>Vi samo zamislite kakvu stranicu želite, a mi ćemo Vaše želje pretvoriti u stvarnost.</b></li>
+                    </ul>
+                    <p></p>
+                </div>  
+                <div class="download">
+                    <p>Preuzmite cjenik</p>
+                    <div class="pdf">
+                        <a href="#" target="_blank">
+                            <img src="images/pdf.png" alt="Preuzmite kao PDF">
+                        </a>
+                    </div>
+                </div> 
+            </div> 
+        </div>
+    </section><!--/#webzasve-->
+
+    <section id="animated-number">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title text-center wow fadeInDown">Advertix u brojkama</h2>
+                <p class="text-center wow fadeInDown">Još neki od razloga koji nas čine jedinstvenim.</p>
+            </div>
+
+            <div class="row text-center">
+                <div class="col-sm-3 col-xs-6">
+                    <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="0ms">
+                        <div class="animated-number">125</div>
+                        <strong>USPJEŠNIH PROJEKATA</strong>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-xs-6">
+                    <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="100ms">
+                        <div class="animated-number">87</div>
+                        <strong>ZADOVOLJNIH KLIJENATA</strong>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-xs-6">
+                    <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="200ms">
+                        <div class="animated-number" data-digit="5000" data-duration="1000">12</div>
+                        <strong>GODINA ISKUSTVA</strong>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-xs-6">
+                    <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
+                        <div class="animated-number">7</div>
+                        <strong>DOBIVENIH PRIZNANJA</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!--/#animated-number-->
+
+    <section id="contact">
+        <div class="container">
+            <form class="form floating-labels" id="contact-form" name="contact-form" method="post">
+                <fieldset>
+                    <div class="icon">
+                        <label class="label" for="name">Ime</label>
+                        <input class="user" type="text" name="name" id="name" required>
+                    </div> 
+
+                    <div class="icon">
+                        <label class="label" for="email">Email</label>
+                        <input class="email" type="email" name="email" id="email" required>
+                    </div>
+
+                    <div class="icon">
+                        <label class="label" for="phone">Telefon</label>
+                        <input class="phone" type="text" name="phone" id="phone">
+                    </div> 
+
+                    <div class="icon">
+                        <label class="label" for="message">Poruka</label>
+                        <textarea class="message" name="message" id="message" required></textarea>
+                    </div>
+
+                    <div>
+                         <button type="submit" class="btn btn-primary btn-lg">Pošalji</button>
+                    </div>
+                </fieldset>
+                
+            </form> 
+            <div class="info">
+                <div class="col-sm-4">
+                    <div class="info-holder wow fadeInUp" data-wow-duration="400ms" data-wow-delay="0ms">
+                        <i class="fa fa-mobile"></i>
+                        <p>+395 98 897 858</p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="info-holder wow fadeInUp" data-wow-duration="400ms" data-wow-delay="100ms">
+                        <i class="fa fa-taxi"></i>
+                        <p>Vijenac Petrove gore 21 <br> 31000, Osijek</p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="info-holder wow fadeInUp" data-wow-duration="400ms" data-wow-delay="200ms">
+                        <i class="fa fa-reply"></i>
+                        <p>info@advertix.hr</p>
+                    </div>
+                </div>
+            </div>       
+        </div>
+        
+    </section><!--/#contact-->
+    
+    <section id="google-map">
+        <div id="google-container"></div>
+        <!-- #zoom-in and #zoom-out will be used to create our custom buttons for zooming-in/out -->
+        <div id="zoom-in"></div>
+        <div id="zoom-out"></div>
+        <!--<address>Vijenac Petrove gore 21, 31000, Osijek</address>-->
+    </section>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="row hidden-xs">
+                <div class="col-sm-12">
+                    <p class="partners">Neki od naših partnera:</p>
+                </div>
+                <div class="col-sm-3">
+                    <ul>
+                        <li><a href="http://www.panturist.hr/" target="_blank">Panturist d.d.</a></li>
+                        <li><a href="http://www.nexe.hr/" target="_blank">Nexe Grupa</a></li> 
+                        <li><a href="http://www.zrsosijek.hr/" target="_blank">Zbor rukometnih sudaca Osijek</a></li>
+                        <li><a href="http://www.reklam-centar.com/" target="_blank">Reklam centar</a></li> <li><a href="http://www.feravino.hr/" target="_blank">Feravino d.o.o.</a></li>
+                        <li><a href="http://www.ccusa.com/" target="_blank">Camp Counsellors d.o.o.</a></li>
+                        <li><a href="http://www.tera.unios.hr/" target="_blank">Tera Tehnopolis d.o.o.</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <ul>
+                        <li><a href="http://www.xenios.hr/" target="_blank">Xenios d.o.o.</a></li>
+                        <li><a href="http://ivora.hr/" target="_blank">Ivora</a></li>
+                        <li><a href="http://www.fridrich.hr/" target="_blank">Fridrich d.o.o.</a></li>
+                        <li><a href="http://www.extremesport.hr/" target="_blank">Extreme Sport d.o.o.</a></li>
+                        <li><a href="http://www.lingua.hr/" target="_blank">Lingua</a></li>
+                        <li><a href="http://www.edunova.hr/" target="_blank">Edunova</a></li>
+                        <li><a href="http://www.brlic-keramika.com/" target="_blank">Brlić d.o.o.</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <ul>
+                        <li><a href="http://www.opcina-bizovac.hr/" target="_blank">Općina Bizovac</a></li>
+                        <li><a href="http://www.lanico.hr/" target="_blank">Lanico</a></li>
+                        <li><a href="http://www.hrs.hr/" target="_blank">Hrvatski rukometni savez</a></li>
+                        <li><a href="http://www.exoro.hr/" target="_blank">Exoro d.o.o.</a></li>
+                        <li><a href="http://www.snarp.hr/" target="_blank">Snarp d.o.o.</a></li>
+                        <li><a href="http://www.osijek031.com/" target="_blank">Osijek031.com</a></li>
+                        <li><a href="http://www.ato.hr/" target="_blank">Ato Inženjering d.o.o.</a></li>   
+                    </ul>
+                </div>
+                
+                <div class="col-sm-3">
+                    <ul style="border-right: none;">
+                        <li><a href="http://www.petrijevci.hr/index.php" target="_blank">Općina Petrijevci</a></li>
+                        <li><a href="http://inkubator.hr/" target="_blank">BIOS d.o.o.</a></li>
+                        <li><a href="http://www.pekarstvo-kadulja.hr/" target="_blank">Pekarstvo Kadulja</a></li>
+                        <li><a href="http://www.dimnjak.hr/" target="_blank">Dimnjak d.o.o.</a></li>
+                        <li><a href="http://www.ad-rem.hr/" target="_blank">AD Rem</a></li>
+                        <li><a href="http://www.josic.hr/" target="_blank">Restoran vinarija Josić</a></li>
+                        <li><a href="http://www.lidl.hr/hr/index.htm" target="_blank">Lidl Hrvatska</a></li>
+                    </ul>
+                </div>               
+            </div>
+            <div class="row visible-xs">
+                <div class="col-sm-12">
+                    <p class="partners">Partneri</p>
+                </div>
+                <div class="col-xs-6">
+                    <ul>
+                        <li><a href="http://streljastvo.hr/ssobz/" target="_blank">Županijski streljački savez</a></li>
+                        <li><a href="http://www.panturist.hr/" target="_blank">Panturist d.d.</a></li>
+                        <li><a href="http://www.nexe.hr/" target="_blank">Nexe Grupa</a></li> <li><a href="http://www.idol.hr/" target="_blank">Idol d.o.o.</a></li>
+                        <li><a href="http://www.zrsosijek.hr/" target="_blank">Zbor rukometnih sudaca Osijek</a></li>
+                        <li><a href="http://www.reklam-centar.com/" target="_blank">Reklam centar</a></li> 
+                        <li><a href="http://www.feravino.hr/" target="_blank">Feravino d.o.o.</a></li>
+                        <li><a href="http://www.ccusa.com/" target="_blank">Camp Counsellors d.o.o.</a></li>
+                        <li><a href="http://www.media-box.hr/" target="_blank">Media Box</a></li>
+                        <li><a href="http://www.xenios.hr/" target="_blank">Xenios d.o.o.</a></li>
+                        <li><a href="http://ivora.hr/" target="_blank">Ivora</a></li>
+                        <li><a href="http://www.fridrich.hr/" target="_blank">Fridrich d.o.o.</a></li>
+                        <li><a href="http://www.extremesport.hr/" target="_blank"><a href="" target="_blank">Extreme Sport d.o.o.</a></li>
+                        <li><a href="http://www.lingua.hr/" target="_blank">Lingua</a></li>
+                        <li><a href="http://www.edunova.hr/" target="_blank"><a href="" target="_blank">Edunova</a></li>
+                        <li><a href="http://www.brlic-keramika.com/" target="_blank">Brlić d.o.o.</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6">
+                    <ul style="border-right: none;">
+                        <li><a href="http://www.opcina-bizovac.hr/" target="_blank">Općina Bizovac</a></li>
+                        <li><a href="http://www.lanico.hr/" target="_blank">Lanico</a></li>
+                        <li><a href="http://www.hrs.hr/" target="_blank">Hrvatski rukometni savez</a></li>
+                        <li><a href="http://www.exoro.hr/" target="_blank">Exoro d.o.o.</a></li>
+                        <li><a href="http://www.snarp.hr/" target="_blank">Snarp d.o.o.</a></li>
+                        <li><a href="http://www.osijek031.com/" target="_blank">Osijek031.com</a></li>
+                        <li><a href="http://www.ato.hr/" target="_blank">Ato Inženjering d.o.o.</a></li>   
+                        <li><a href="http://www.tera.unios.hr/" target="_blank">Tera Tehnopolis d.o.o.</a></li>
+                        <li><a href="http://www.petrijevci.hr/index.php" target="_blank">Općina Petrijevci</a></li>
+                        <li><a href="http://inkubator.hr/" target="_blank">BIOS d.o.o.</a></li>
+                        <li><a href="http://www.pekarstvo-kadulja.hr/" target="_blank">Pekarstvo Kadulja</a></li>
+                        <li><a href="http://www.dimnjak.hr/" target="_blank">Dimnjak d.o.o.</a></li>
+                        <li><a href="http://www.ad-rem.hr/" target="_blank">AD Rem</a></li>
+                        <li><a href="http://www.josic.hr/" target="_blank">Restoran vinarija Josić</a></li>
+                        <li><a href="http://www.lidl.hr/hr/index.htm" target="_blank">Lidl Hrvatska</a></li>
+                        <li><a href="http://www.tzosijek.hr/" target="_blank">Turistička zajednica Grada Osijeka</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="footer-copyright">
+                    Copyright © Advertix <span id="footer-year"></span> || All right reserved
+                </div>
+            </div>
+        </div>
+    </footer><!--/#footer-->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqehNpBX9N4OwoXWNWGxq9xowQ9JAnoVo"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/mousescroll.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/jquery.inview.min.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/google-map.js"></script>
+    <script src="js/main.js"></script>
 </body>
-</html>
 
+<div class="modal fade" id="contact-modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-sm">
+    <div class="contact-modal">
+        <div class="modal-body">
+            Zahvaljujemo se! Vaša e-mail poruka je poslana. Očekujte odgovor u najbržem mogućem roku.
+        </div>
+        <div class="modal-footer">
+          <button class="btn" data-dismiss="modal">Uredu</button>
+        </div>
+    </div>
+  </div>
+</div>
+
+</html>

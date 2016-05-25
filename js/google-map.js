@@ -6,7 +6,7 @@ jQuery(document).ready(function($){
 
 	//google map custom marker icon - .png fallback for IE11
 	var is_internetExplorer11= navigator.userAgent.toLowerCase().indexOf('trident') > -1;
-	var marker_url = ( is_internetExplorer11 ) ? 'img/cd-icon-location.png' : 'img/cd-icon-location.svg';
+	var marker_url = ( is_internetExplorer11 ) ? '../images/icons/icon-location.png' : '../images/icons/icon-location.svg';
 		
 	//define the basic color of your map, plus a value for saturation and brightness
 	var	main_color = '#2d313f',
@@ -209,8 +209,8 @@ jQuery(document).ready(function($){
 	//add custom buttons for the zoom-in/zoom-out on the map
 	function CustomZoomControl(controlDiv, map) {
 		//grap the zoom elements from the DOM and insert them in the map 
-	  	var controlUIzoomIn= document.getElementById('cd-zoom-in'),
-	  		controlUIzoomOut= document.getElementById('cd-zoom-out');
+	  	var controlUIzoomIn= document.getElementById('zoom-in'),
+	  		controlUIzoomOut= document.getElementById('zoom-out');
 	  	controlDiv.appendChild(controlUIzoomIn);
 	  	controlDiv.appendChild(controlUIzoomOut);
 

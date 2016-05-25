@@ -1,284 +1,290 @@
-var AntiSpamResult;
+jQuery(function($) {'use strict';
 
-function refreshAntiSpam(){
-	var operation = Math.floor(Math.random() * 3);
-	var a = Math.floor(Math.random() * 10) + 1;
-	var b = Math.floor(Math.random() * 10) + 1;
+	// Navigation Scroll
+	$(window).scroll(function(event) {
+		Scroll();
+	});
 
-	switch(operation){
-		case 0:
-			var operationString = ' + ';
-			AntiSpamResult = a+b;
-			break;
-		case 1:
-			var operationString = ' - ';
-			AntiSpamResult = a-b;
-			break;
-		case 2:
-			var operationString = ' * ';
-			AntiSpamResult = a*b;
-			break;
-	}
+	$('#main-menu a').on('click', function() {  
+		$('html, body').animate({scrollTop: $(this.hash).offset().top - 5}, 1000);
+		return false;
+	});
 
-	$('#spamOperation').html(a + operationString + b);
+	// User define function
+	function Scroll() {
+		var contentTop      =   [];
+		var contentBottom   =   [];
+		var winTop      =   $(window).scrollTop();
+		var rangeTop    =   200;
+		var rangeBottom =   500;
+		$('#main-menu').find('.scroll a').each(function(){
+			contentTop.push( $( $(this).attr('href') ).offset().top);
+			contentBottom.push( $( $(this).attr('href') ).offset().top + $( $(this).attr('href') ).height() );
+		})
+		$.each( contentTop, function(i){
+			if ( winTop > contentTop[i] - rangeTop ){
+				$('#main-menu li.scroll')
+				.removeClass('active')
+				.eq(i).addClass('active');			
+			}
+		})
+	};
 
-}
+	$('#contact-us').click(function(){
+	  $('html, body').animate({
+	    scrollTop: $("#contact").offset().top
+	  }, 1000);
+	});
 
-function clearContact(){
-	$('#name').val('');
-	$('#email').val('');
-	$('#phone').val('');
-	$('#message').val('');
-	$('#result').val('');
+	//Slider
+	$(document).ready(function() {
+		var time = 7; // time in seconds
 
-	$('#contactForm .floating-label-form-group').removeClass("floating-label-form-group-with-value");
+	 	var $progressBar,
+	      $bar, 
+	      $elem, 
+	      isPause, 
+	      tick,
+	      percentTime;
+	 
+	    //Init the carousel
+	    $("#main-slider").find('.owl-carousel').owlCarousel({
+	      slideSpeed : 500,
+	      paginationSpeed : 500,
+	      singleItem : true,
+	      afterInit : progressBar,
+	      afterMove : moved,
+	      startDragging : pauseOnDragging,
+	      transitionStyle : "fadeUp"
+	    });
+	 
+	    //Init progressBar where elem is $("#owl-demo")
+	    function progressBar(elem){
+	      $elem = elem;
+	      //build progress bar elements
+	      buildProgressBar();
+	      //start counting
+	      start();
+	    }
+	 
+	    //create div#progressBar and div#bar then append to $(".owl-carousel")
+	    function buildProgressBar(){
+	      $progressBar = $("<div>",{
+	        id:"progressBar"
+	      });
+	      $bar = $("<div>",{
+	        id:"bar"
+	      });
+	      $progressBar.append($bar).appendTo($elem);
+	    }
+	 
+	    function start() {
+	      //reset timer
+	      percentTime = 0;
+	      isPause = false;
+	      //run interval every 0.01 second
+	      tick = setInterval(interval, 10);
+	    };
+	 
+	    function interval() {
+	      if(isPause === false){
+	        percentTime += 1 / time;
+	        $bar.css({
+	           width: percentTime+"%"
+	         });
+	        //if percentTime is equal or greater than 100
+	        if(percentTime >= 100){
+	          //slide to next item 
+	          $elem.trigger('owl.next')
+	        }
+	      }
+	    }
+	 
+	    //pause while dragging 
+	    function pauseOnDragging(){
+	      isPause = true;
+	    }
+	 
+	    //moved callback
+	    function moved(){
+	      //clear interval
+	      clearTimeout(tick);
+	      //start again
+	      start();
+	    }
+	});
 
-	refreshAntiSpam();
-}
+	//Initiat WOW JS
+	var wow = new WOW(
+        {
+            //offset: 50,
+            mobile: false
+           // live: true
+        }
+    );
+	new WOW().init();
+	//smoothScroll
+	smoothScroll.init();
 
-function handleContact(response){
-	if(response == 'error') console.error('Error from contact response!');
+	
 
-	clearContact();
-}
+	$(document).ready(function() {
 
-function contact(){
+		$("#bm-slider").find('.owl-carousel').owlCarousel({
+	      slideSpeed : 300,
+	      pagination: false,
+	      autoPlay: 4000,
+	      singleItem : true,
+	      navigation : true,
+			navigationText: [
+			"<i class='fa fa-angle-left'></i>",
+			"<i class='fa fa-angle-right'></i>"
+			],
+	      //autoHeight : true,
+	      transitionStyle : "backSlide"
+	    });
 
-	var formData = $('#contactForm').serializeArray();
+	    $("#pm-slider").find('.owl-carousel').owlCarousel({
+	      slideSpeed : 300,
+	      pagination: false,
+	      autoPlay: 4000,
+	      singleItem : true,
+	      navigation : true,
+			navigationText: [
+			"<i class='fa fa-angle-left'></i>",
+			"<i class='fa fa-angle-right'></i>"
+			],
+	      //autoHeight : true,
+	      transitionStyle : "backSlide"
+	    });
 
-	var name = formData[0].value;
-	var email = formData[1].value;
-	var phone = formData[2].value;
-	var msg = formData[3].value;
-	var result = formData[4].value;
+		$('.mgp-preview').magnificPopup({
+	      type:'image',
+	      closeBtnInside:true,
+	      // Delay in milliseconds before popup is removed
+	      removalDelay: 300,
 
-	var warning = '';
-	var check = name && email && msg;
+	      // Class that is added to popup wrapper and background
+	      // make it unique to apply your CSS animations just to this exact popup
+	      mainClass: 'mfp-fade',
+	      gallery: {
+	          enabled: true, // set to true to enable gallery
 
-	if(!check){
-		warning = 'Ispunite sva obavezna polja!';
-		$('#FormWarning').html(warning);
-		return;
-	}
+	          preload: [0,2], // read about this option in next Lazy-loading section
 
-	$('#FormWarning').html('');
+	          navigateByImgClick: true,
 
-	check = AntiSpamResult == result;
+	          //arrowMarkup: '<button title="%title%" type="button" class="mfp-arrow mfp-arrow-%dir%"></button>', // markup of an arrow button
 
-	if(!check){
-		warning = 'Neispravna anti-spam provjera!';
-		$('#AntiSpamWarning').html(warning);
-		return;
-	}
+	          closeMarkup: '<button title="%title%" class="mfp-close"><i class="mfp-close-icn">&times;</i></button>',
 
-	$('#AntiSpamWarning').html('');
+	          tPrev: 'Previous (Left arrow key)', // title for left button
+	          tNext: 'Next (Right arrow key)', // title for right button
+	          //tCounter: '<span class="mfp-counter">%curr% of %total%</span>' // markup of counter
+	        }
+	   });
 
-	$.post('backend/contact.php', $('#contactForm').serialize()).done(function(response){
-			handleContact(response);
+		//Animated Number
+		$.fn.animateNumbers = function() {
+			return this.each(function() {
+				$(this).prop('Counter',0).animate({
+			        Counter: $(this).text()
+			    }, {
+			        duration: 1000,
+			        easing: 'swing',
+			        step: function (now) {
+			            $(this).text(Math.ceil(now));
+			        }
+			    });
+			});
+		};
+
+		$('.animated-number').on('inview', function(event, isInView) {
+			var $this = $(this);
+			if (isInView) {
+				$this.animateNumbers(); 
+				$this.unbind('inview');
+			}
 		});
-
-}
-
-jQuery(document).ready(function($){
-
-	refreshAntiSpam();
-
-	/*$('#contactForm').on('submit', function(e){
-		e.preventDefault();
-		contact();
-	  });*/
-	
-	//open-close submenu on mobile
-	$('.cd-main-nav').on('click', function(event){
-		if($(event.target).is('.cd-main-nav')) $(this).children('ul').toggleClass('is-visible');
 	});
 
-	//page scroll for arrow bounce
-	$('#about-us').click(function(){
-		$('html, body').animate({
-			scrollTop: $("#more").offset().top
-		}, 1000);
+	// Contact form
+	if( $('.floating-labels').length > 0 ) floatLabels();
+
+	function floatLabels() {
+		var inputFields = $('.floating-labels .label').next();
+		inputFields.each(function(){
+			var singleInput = $(this);
+			//check if user is filling one of the form fields 
+			checkVal(singleInput);
+			singleInput.on('change keyup', function(){
+				checkVal(singleInput);	
+			});
+		});
+	}
+
+	function checkVal(inputField) {
+		( inputField.val() == '' ) ? inputField.prev('.label').removeClass('float') : inputField.prev('.label').addClass('float');
+	}
+
+	function clearContact(){
+		$('#name').val('');
+		$('#email').val('');
+		$('#phone').val('');
+		$('#message').val('');
+
+		$('.label').removeClass('float');
+	}
+
+	function handleContact(response){
+		if(response == 'errors') console.error('Error from contact response!');
+
+		clearContact();
+		
+		$('#contact-modal').modal('toggle');
+	}
+
+	function contact(){
+
+		var formData = $('#contact-form').serializeArray();
+
+		$.post('sendemail.php', $('#contact-form').serialize()).done(function(response){
+			handleContact(response);
+		});	
+
+	}
+
+	jQuery(document).ready(function(){
+		$('#contact-form').on('submit', function(e){
+			e.preventDefault();
+			contact();
+		});
 	});
 
-	//page scroll
-	$(function() {
-	    $('body').on('click', '.page-scroll a', function(event) {
-	        var $anchor = $(this);
-	        $('html, body').stop().animate({
-	            scrollTop: $($anchor.attr('href')).offset().top
-	        }, 1500, 'easeInOutExpo');
-	        event.preventDefault();
-	    });
-	    
+		
+
+
+	/*var form = $('#contact-form');
+	form.submit(function(event){
+		event.preventDefault();
+		var form_status = $('<div class="form_status"></div>');
+		$.ajax({
+			url: $(this).attr('action'),
+			beforeSend: function(){
+				form.prepend( form_status.html('<p><i class="fa fa-spinner fa-spin"></i> Email is sending...</p>').fadeIn() );
+			}
+		}).done(function(data){
+			form_status.html('<p class="text-success">Thank you for contact us. As early as possible  we will contact you</p>').delay(3000).fadeOut();
+		});
+	});*/
+		
+
+	//Pretty Photo
+	$("a[rel^='prettyPhoto']").prettyPhoto({
+		social_tools: false
 	});
-
-	// Initialize WOW.js Scrolling Animations
-    new WOW().init();
-
-	// Floating label headings for the contact form
-	$(function() {
-	    $("body").on("input propertychange", ".floating-label-form-group", function(e) {
-	        $(this).toggleClass("floating-label-form-group-with-value", !! $(e.target).val());
-	    }).on("focus", ".floating-label-form-group", function() {
-	        $(this).addClass("floating-label-form-group-with-focus");
-	    }).on("blur", ".floating-label-form-group", function() {
-	        $(this).removeClass("floating-label-form-group-with-focus");
-	    });
-	});
-
-	//set animation timing
-	var animationDelay = 2500,
-		//loading bar effect
-		barAnimationDelay = 3800,
-		barWaiting = barAnimationDelay - 3000, //3000 is the duration of the transition on the loading bar - set in the scss/css file
-		//letters effect
-		lettersDelay = 50,
-		//type effect
-		typeLettersDelay = 150,
-		selectionDuration = 500,
-		typeAnimationDelay = selectionDuration + 800,
-		//clip effect 
-		revealDuration = 600,
-		revealAnimationDelay = 1500;
-	
-	initHeadline();
 
 	var date = new Date();
     $('#footer-year').text(date.getFullYear());
-	
 
-	function initHeadline() {
-		//insert <i> element for each letter of a changing word
-		singleLetters($('.cd-headline.letters').find('b'));
-		//initialise headline animation
-		animateHeadline($('.cd-headline'));
-	}
-
-	function singleLetters($words) {
-		$words.each(function(){
-			var word = $(this),
-				letters = word.text().split(''),
-				selected = word.hasClass('is-visible');
-			for (i in letters) {
-				if(word.parents('.rotate-2').length > 0) letters[i] = '<em>' + letters[i] + '</em>';
-				letters[i] = (selected) ? '<i class="in">' + letters[i] + '</i>': '<i>' + letters[i] + '</i>';
-			}
-		    var newLetters = letters.join('');
-		    word.html(newLetters).css('opacity', 1);
-		});
-	}
-
-	function animateHeadline($headlines) {
-		var duration = animationDelay;
-		$headlines.each(function(){
-			var headline = $(this);
-			
-			if(headline.hasClass('loading-bar')) {
-				duration = barAnimationDelay;
-				setTimeout(function(){ headline.find('.cd-words-wrapper').addClass('is-loading') }, barWaiting);
-			} else if (headline.hasClass('clip')){
-				var spanWrapper = headline.find('.cd-words-wrapper'),
-					newWidth = spanWrapper.width() + 10
-				spanWrapper.css('width', newWidth);
-			} else if (!headline.hasClass('type') ) {
-				//assign to .cd-words-wrapper the width of its longest word
-				var words = headline.find('.cd-words-wrapper b'),
-					width = 0;
-				words.each(function(){
-					var wordWidth = $(this).width();
-				    if (wordWidth > width) width = wordWidth;
-				});
-				headline.find('.cd-words-wrapper').css('width', width);
-			};
-
-			//trigger animation
-			setTimeout(function(){ hideWord( headline.find('.is-visible').eq(0) ) }, duration);
-		});
-	}
-
-	function hideWord($word) {
-		var nextWord = takeNext($word);
-		
-		if($word.parents('.cd-headline').hasClass('type')) {
-			var parentSpan = $word.parent('.cd-words-wrapper');
-			parentSpan.addClass('selected').removeClass('waiting');	
-			setTimeout(function(){ 
-				parentSpan.removeClass('selected'); 
-				$word.removeClass('is-visible').addClass('is-hidden').children('i').removeClass('in').addClass('out');
-			}, selectionDuration);
-			setTimeout(function(){ showWord(nextWord, typeLettersDelay) }, typeAnimationDelay);
-		
-		} else if($word.parents('.cd-headline').hasClass('letters')) {
-			var bool = ($word.children('i').length >= nextWord.children('i').length) ? true : false;
-			hideLetter($word.find('i').eq(0), $word, bool, lettersDelay);
-			showLetter(nextWord.find('i').eq(0), nextWord, bool, lettersDelay);
-
-		}  else if($word.parents('.cd-headline').hasClass('clip')) {
-			$word.parents('.cd-words-wrapper').animate({ width : '2px' }, revealDuration, function(){
-				switchWord($word, nextWord);
-				showWord(nextWord);
-			});
-
-		} else if ($word.parents('.cd-headline').hasClass('loading-bar')){
-			$word.parents('.cd-words-wrapper').removeClass('is-loading');
-			switchWord($word, nextWord);
-			setTimeout(function(){ hideWord(nextWord) }, barAnimationDelay);
-			setTimeout(function(){ $word.parents('.cd-words-wrapper').addClass('is-loading') }, barWaiting);
-
-		} else {
-			switchWord($word, nextWord);
-			setTimeout(function(){ hideWord(nextWord) }, animationDelay);
-		}
-	}
-
-	function showWord($word, $duration) {
-		if($word.parents('.cd-headline').hasClass('type')) {
-			showLetter($word.find('i').eq(0), $word, false, $duration);
-			$word.addClass('is-visible').removeClass('is-hidden');
-
-		}  else if($word.parents('.cd-headline').hasClass('clip')) {
-			$word.parents('.cd-words-wrapper').animate({ 'width' : $word.width() + 10 }, revealDuration, function(){ 
-				setTimeout(function(){ hideWord($word) }, revealAnimationDelay); 
-			});
-		}
-	}
-
-	function hideLetter($letter, $word, $bool, $duration) {
-		$letter.removeClass('in').addClass('out');
-		
-		if(!$letter.is(':last-child')) {
-		 	setTimeout(function(){ hideLetter($letter.next(), $word, $bool, $duration); }, $duration);  
-		} else if($bool) { 
-		 	setTimeout(function(){ hideWord(takeNext($word)) }, animationDelay);
-		}
-
-		if($letter.is(':last-child') && $('html').hasClass('no-csstransitions')) {
-			var nextWord = takeNext($word);
-			switchWord($word, nextWord);
-		} 
-	}
-
-	function showLetter($letter, $word, $bool, $duration) {
-		$letter.addClass('in').removeClass('out');
-		
-		if(!$letter.is(':last-child')) { 
-			setTimeout(function(){ showLetter($letter.next(), $word, $bool, $duration); }, $duration); 
-		} else { 
-			if($word.parents('.cd-headline').hasClass('type')) { setTimeout(function(){ $word.parents('.cd-words-wrapper').addClass('waiting'); }, 200);}
-			if(!$bool) { setTimeout(function(){ hideWord($word) }, animationDelay) }
-		}
-	}
-
-	function takeNext($word) {
-		return (!$word.is(':last-child')) ? $word.next() : $word.parent().children().eq(0);
-	}
-
-	function takePrev($word) {
-		return (!$word.is(':first-child')) ? $word.prev() : $word.parent().children().last();
-	}
-
-	function switchWord($oldWord, $newWord) {
-		$oldWord.removeClass('is-visible').addClass('is-hidden');
-		$newWord.removeClass('is-hidden').addClass('is-visible');
-	}
 });

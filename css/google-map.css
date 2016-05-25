@@ -15,29 +15,27 @@
   }
 }
 
-#cd-google-map {
+#google-map {
   position: relative;
 }
-#cd-google-map address {
+#google-map address {
   position: absolute;
   width: 100%;
   bottom: 0;
   left: 0;
   padding: 1em 1em;
-  background-color: rgba(211, 104, 104, 0.9);
+  background-color: rgba(97, 165, 70, 0.69);
   color: white;
   font-size: 13px;
-  font-size: 0.8125rem;
 }
 @media only screen and (min-width: 768px) {
-  #cd-google-map address {
+  #google-map address {
     font-size: 15px;
-    font-size: 0.9375rem;
     text-align: center;
   }
 }
 
-#cd-zoom-in, #cd-zoom-out {
+#zoom-in, #zoom-out {
   height: 32px;
   width: 32px;
   cursor: pointer;
@@ -45,28 +43,28 @@
   background-color: rgba(211, 104, 104, 0.9);
   background-repeat: no-repeat;
   background-size: 32px 64px;
-  background-image: url("../img/cd-icon-controller.svg");
+  background-image: url("../images/icons/icon-controller.svg");
 }
-.no-touch #cd-zoom-in:hover, .no-touch #cd-zoom-out:hover {
+.no-touch #zoom-in:hover, .no-touch #zoom-out:hover {
   background-color: #d36868;
 }
 @media only screen and (min-width: 768px) {
-  #cd-zoom-in, #cd-zoom-out {
+  #zoom-in, #zoom-out {
     margin-left: 50px;
   }
 }
 
-#cd-zoom-in {
+#zoom-in {
   background-position: 50% 0;
   margin-top: 10px;
   margin-bottom: 1px;
 }
 @media only screen and (min-width: 768px) {
-  #cd-zoom-in {
+  #zoom-in {
     margin-top: 50px;
   }
 }
 
-#cd-zoom-out {
+#zoom-out {
   background-position: 50% -32px;
 }
